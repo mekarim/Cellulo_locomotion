@@ -1,0 +1,39 @@
+build/default/production/_ext/1472/main.o:  \
+../main.c  \
+ ../../../../DSP33_cellulo_vib/molole/can/can.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../types/uc.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../gpio/gpio.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../gpio/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/dma/dma.h  \
+ ../../../../DSP33_cellulo_vib/molole/dma/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/gpio/gpio.h  \
+ ../../../../DSP33_cellulo_vib/molole/clock/clock.h  \
+ ../../../../DSP33_cellulo_vib/molole/clock/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/error/error.h  \
+ ../../../../DSP33_cellulo_vib/molole/types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/timer/timer.h  \
+ ../../../../DSP33_cellulo_vib/molole/timer/../types/types.h  \
+ ../../../../aseba/vm/natives.h  \
+../../../../aseba/vm/../common/types.h  \
+ ../../../../aseba/vm/vm.h  \
+../../../../aseba/vm/vm.h  \
+ ../../../../aseba/common/consts.h  \
+ ../../../../DSP33_cellulo_vib/molole/adc/adc.h  \
+ ../../../../DSP33_cellulo_vib/molole/adc/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/adc/../dma/dma.h  \
+ ../../../../DSP33_cellulo_vib/molole/pwm/pwm.h  \
+ ../../../../DSP33_cellulo_vib/molole/encoder/encoder.h  \
+ ../../../../DSP33_cellulo_vib/molole/encoder/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/encoder/../gpio/gpio.h  \
+ ../../../../DSP33_cellulo_vib/molole/motor-csp/motor-csp.h  \
+ ../../../../DSP33_cellulo_vib/molole/motor-csp/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c/i2c.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c/../error/error.h  \
+ ../../../../DSP33_cellulo_vib/molole/ic/ic.h  \
+ ../../../common/dspic/glue/skel.h  \
+../../../../aseba/common/types.h  \
+ ../skel-user.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c-devices/i2c-devices/lis331.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c-devices/i2c-devices/ds2777.h 

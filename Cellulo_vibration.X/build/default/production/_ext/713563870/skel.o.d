@@ -1,0 +1,39 @@
+build/default/production/_ext/713563870/skel.o:  \
+ ../../../common/dspic/glue/skel.c  \
+ ../../../../DSP33_cellulo_vib/molole/can/can.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../types/uc.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../gpio/gpio.h  \
+ ../../../../DSP33_cellulo_vib/molole/can/../gpio/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/dma/dma.h  \
+ ../../../../DSP33_cellulo_vib/molole/dma/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/gpio/gpio.h  \
+ ../../../../DSP33_cellulo_vib/molole/types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/error/error.h  \
+ ../../../../DSP33_cellulo_vib/molole/flash/flash.h  \
+ ../../../../DSP33_cellulo_vib/molole/flash/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/clock/clock.h  \
+ ../../../../DSP33_cellulo_vib/molole/clock/../types/types.h  \
+ ../../../../aseba/transport/can/can-net.h  \
+ ../../../../aseba/transport/can/../../common/types.h  \
+ ../../../../aseba/vm/natives.h  \
+../../../../aseba/vm/../common/types.h  \
+ ../../../../aseba/vm/vm.h  \
+../../../../aseba/vm/vm.h  \
+ ../../../../aseba/common/consts.h  \
+ ../../../../aseba/transport/buffer/vm-buffer.h  \
+ ../../../../aseba/transport/buffer/../../common/types.h  \
+ ../../../../aseba/transport/buffer/../../vm/vm.h  \
+ ../../../../aseba/transport/buffer/../../vm/natives.h  \
+ ../../../../aseba/common/productids.h  \
+../../../common/dspic/glue/skel.h  \
+ ../../../../aseba/common/types.h  \
+../skel-user.h  \
+ ../../../../DSP33_cellulo_vib/molole/motor-csp/motor-csp.h  \
+ ../../../../DSP33_cellulo_vib/molole/motor-csp/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c/i2c.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c/../types/types.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c/../error/error.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c-devices/i2c-devices/lis331.h  \
+ ../../../../DSP33_cellulo_vib/molole/i2c-devices/i2c-devices/ds2777.h  \
+ ../skel-user.c 
