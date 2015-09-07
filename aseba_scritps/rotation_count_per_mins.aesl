@@ -1,0 +1,64 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+<event size="1" name="rpm"/>
+<event size="0" name="motor_247"/>
+<event size="0" name="motor_347"/>
+<event size="0" name="motor_447"/>
+<event size="0" name="motor_547"/>
+<event size="0" name="motor_647"/>
+<event size="0" name="motor_747"/>
+<event size="0" name="motor_847"/>
+<event size="0" name="motor_947"/>
+<event size="0" name="MOTOR_STOP"/>
+
+
+<!--list of constants-->
+
+
+<!--show keywords state-->
+<keywords flag="true"/>
+
+
+<!--node -->
+<node nodeId="4" name=""># Motor PWM Initialization
+m2.pid.current_max 	= 60
+m2.pid._period 		= -1
+
+
+timer = 75
+onevent timer0
+	emit rpm[speed2]
+	
+onevent MOTOR_STOP
+	m2.pwm = 0
+	
+# max allowed speed 947 which is 3.0V
+onevent motor_247
+	m2.pwm = 247
+	
+onevent motor_347
+	m2.pwm = 347
+	
+onevent motor_447
+	m2.pwm = 447
+	
+onevent motor_547
+	m2.pwm = 547
+	
+onevent motor_647
+	m2.pwm = 647
+	
+onevent motor_747
+	m2.pwm = 747
+	
+onevent motor_847
+	m2.pwm = 847
+	
+onevent motor_947
+	m2.pwm = 947</node>
+
+
+</network>

@@ -395,15 +395,6 @@ void hall_dig_enc_init_16(hall_dig_enc_data *d) {
     d->sen_t1 = gpio_read(HALL_DIG2);
 }
 
-unsigned int rpm_2          = 0;
-unsigned int time_2         = 0;
-unsigned int count_2		= 0;
-unsigned int rot_count_2 	= 0;
-unsigned int hall_state_2 	= 0;
-unsigned int hall_pv_2      = 0;
-unsigned int hall2_delta    = 0;
-long rpm_m_pv_2    = 0;
-
 /*
  * Moving average using bit shift.
  * Sample size: samSize = 2^samSize
@@ -411,13 +402,6 @@ long rpm_m_pv_2    = 0;
  *             ...fast-and-memory-efficient-moving-average-calculation 
  * Round by adding 0.5 and truncating.
  */
-void IIR_Filter(void)
-{
-    long sample = rpm_2 << 16;
-    rpm_m_pv_2 += (sample - rpm_m_pv_2) >> 7;    
-    rpm_2 = (unsigned int)((rpm_m_pv_2 + 0x8000) >> 16);
-}
-
 void IIR_mov_avg(hall_dig_enc_data *d, int samSize){
     unsigned int sample = d->speed << 16;
     d->speed_info_acc += (sample - d->speed_info_acc) >> samSize;    
@@ -428,18 +412,6 @@ void IIR_mov_avg(hall_dig_enc_data *d, int samSize){
  * 1000000 micro second = 1 second
  * 13334 = 1000000 / 75 micro second
  */
-void rpm_cmp(void){
-    bool cond = (count_2!=0 && ((count_2%2)==0));
-    
-    if (cond){
-        rot_count_2++;
-        rpm_2  = 1000000/vmVariables.timer;
-        rpm_2  = rpm_2/time_2;
-        rpm_2  = 60 * rpm_2;
-        time_2 = 0;
-    }    
-}
-
 void get_rot_speed(hall_dig_enc_data *d){
     bool cond = (d->count!=0 && ((d->count%2)==0));
     
@@ -456,39 +428,9 @@ void get_rot_speed(hall_dig_enc_data *d){
 void timer_cb(int __attribute((unused)) timer_id) {
 /* Callback for the ASEBA timer */    
 	vmVariables.hall_d[2] = gpio_read(HALL_DIG2);
-    hall2_delta = abs(vmVariables.hall_d[2] - hall_pv_2);
+    HALL_DIG_2_EN_DATA.sen_t2 = vmVariables.hall_d[2];
+    HALL_DIG_2_EN_DATA.delta  = abs(HALL_DIG_2_EN_DATA.sen_t2 - HALL_DIG_2_EN_DATA.sen_t1);
     
-    HALL_DIG_2_EN_DATA.sen_t2 = vmVariables.hall_d[2]; //change //present value
-    HALL_DIG_2_EN_DATA.delta = abs(HALL_DIG_2_EN_DATA.sen_t2 - HALL_DIG_2_EN_DATA.sen_t1);
-    
-    if(hall_state_2 == 0){
-        rpm_2       = 0;
-        time_2      = 0;
-        count_2     = 0;
-        rot_count_2 = 0;
-        rpm_m_pv_2  = 0;
-        
-        if (hall2_delta != 0) hall_state_2 = 1;
-    }
-    else if (hall_state_2 == 1) {
-        /* Motor not running, check 2 seconds?
-         * 1000000 micro second = 1 second
-         * 13334 = 1000000 / 75 micro second
-         * 26668 = 13334 * 2 (roughly 2 seconds)
-         *          
-         */ 
-        
-        if (time_2 > 26668) hall_state_2 = 0;
-        if (count_2 >= 32764) count_2 = 0;
-        
-        if (hall2_delta != 0){
-			count_2++;
-			time_2++;
-            rpm_cmp();
-		}
-        else time_2++;
-    }
-
     if (HALL_DIG_2_EN_DATA.state == 0){        
         HALL_DIG_2_EN_DATA.speed          = 0;
         HALL_DIG_2_EN_DATA.time           = 0;
@@ -511,16 +453,10 @@ void timer_cb(int __attribute((unused)) timer_id) {
 		else ++HALL_DIG_2_EN_DATA.time;
   }  
     
-    // Update variables
-    hall_pv_2 = vmVariables.hall_d[2];
+    /* Update the variables */
     HALL_DIG_2_EN_DATA.sen_t1 = HALL_DIG_2_EN_DATA.sen_t2;    
-    
-    vmVariables.rpm_2 = rpm_2;
-    vmVariables.rot_count_2 = rot_count_2;
-    
-    vmVariables.rpm_2_new = HALL_DIG_2_EN_DATA.speed;
-    vmVariables.rot_count_2_new = HALL_DIG_2_EN_DATA.r_count;
-       
+    vmVariables.speed2 = HALL_DIG_2_EN_DATA.speed;
+    vmVariables.r_count2 = HALL_DIG_2_EN_DATA.r_count;
     SET_EVENT(EVENT_TIMER);
 }
 
@@ -841,14 +777,11 @@ int main(void) {
     timer_init(IR_PERIOD, 100,3); // Don't care about the timeout
 	timer_enable_interrupt(IR_PERIOD, timer_period_cb, PRIO_IR);
 	
-    /* Remove two lines 
-     * t-1 value done
+    /* 
      * 75 microsecond (meaning every 7.2 degree to rotation)
      * Approximate pulse every two degree of rotation
-     */
-    hall_pv_2 = gpio_read(HALL_DIG2); // t-1 value done
+     */    
     hall_dig_enc_init_16(&HALL_DIG_2_EN_DATA);  
-    
     timer_init(TIME_TIMER, 75, 6);
     timer_enable_interrupt(TIME_TIMER, timer_cb, PRIO_ENCODER);
     

@@ -1,0 +1,74 @@
+<!DOCTYPE aesl-source>
+<network>
+
+
+<!--list of global events-->
+<event size="0" name="zero_offset"/>
+<event size="0" name="calibrate_current"/>
+<event size="0" name="write_pid_settings"/>
+
+
+<!--list of constants-->
+
+
+<!--show keywords state-->
+<keywords flag="true"/>
+
+
+<!--node -->
+<node nodeId="4" name="">
+# Step 1: zero-offset
+# Step 2: calibrate_current
+# Step 3: Write_pid_settings
+# caution: the system will hang, and it is okay.
+
+
+var c = 0
+var i = 0
+var write_current = 0
+var current_calib[100]
+
+m2.pid._period = -1
+m2.pid._prescaler_s = 5
+
+m2.pid.enable = 1
+m2.pwm = 0
+
+onevent write_pid_settings
+	if write_current == 1 then
+		c = 0
+		for i in 0:99 do
+			c = c + (current_calib[i] - current_calib[0])
+		end
+		c = c / 100
+		c = c + current_calib[0]
+		call _system.settings.read(16, i)
+		i = c + i
+		call _system.settings.write(16, i)
+
+		call _system.settings.flash()
+		call _system.reboot()
+	end
+
+onevent calibrate_current
+	c = 0
+	write_current = 0
+	
+onevent zero_offset
+	call _system.settings.write(16, 0)
+
+onevent m2_motor
+	if c &lt; 10 then
+		c = c + 1
+	elseif c &lt; 110 then
+		current_calib[c-10] = m2._raw_current
+		c = c + 1
+	elseif c == 110 then
+		c = c + 1
+		write_current = 1
+	end
+	
+</node>
+
+
+</network>
