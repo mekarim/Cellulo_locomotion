@@ -383,7 +383,7 @@ typedef struct {
     
     unsigned long pos;      /* Compute position with respect to the reference position */
     unsigned int  speed;    /* Difference last two reference pulse */
-    unsigned long speed_info_acc; /* speed accumulator, for filter */
+    long aver_speed; /* speed average, using filter */
     unsigned int  r_count;
         
 } hall_dig_enc_data;
@@ -397,15 +397,22 @@ void hall_dig_enc_init_16(hall_dig_enc_data *d) {
 
 /*
  * Moving average using bit shift.
- * Sample size: samSize = 2^samSize
+ *
+ * Implement a first order IIR filter to approximate a K sample 
+ * moving average.  This function implements the equation:
+ *
+ * y[n] = alpha * x[n] + (1 - alpha) * y[n-1]
+ *
+ * Sample size: samSize = 2^samSize = log2(1/alpha)
  * Reference: http://electronics.stackexchange.com/questions/30370/...
  *             ...fast-and-memory-efficient-moving-average-calculation 
- * Round by adding 0.5 and truncating.
+ * [Round by adding 0.5 and truncating.]
  */
-void IIR_mov_avg(hall_dig_enc_data *d, int samSize){
-    unsigned int sample = d->speed << 16;
-    d->speed_info_acc += (sample - d->speed_info_acc) >> samSize;    
-    d->speed = (unsigned int)((d->speed_info_acc + 0x8000) >> 16);    
+void IIR_mov_avg(hall_dig_enc_data *d, int samSize)
+{
+    long local_sample = d->speed << 16;
+    d->aver_speed += (local_sample - d->aver_speed) >> samSize;
+    d->speed = (unsigned int)((d->aver_speed + 0x8000) >> 16);
 }
 
 /* Measure the speed from the hall sensor pulses
@@ -420,7 +427,8 @@ void get_rot_speed(hall_dig_enc_data *d){
         ++d->r_count;
         temp = 1000000/vmVariables.timer;
         temp = temp/d->time;
-        d->speed = 60 * temp;         
+        d->speed = 60 * temp;
+        IIR_mov_avg(&d, 9);
         d->time = 0;
     }    
 }
@@ -436,7 +444,7 @@ void timer_cb(int __attribute((unused)) timer_id) {
         HALL_DIG_2_EN_DATA.time           = 0;
         HALL_DIG_2_EN_DATA.count          = 0;    
         HALL_DIG_2_EN_DATA.r_count        = 0;
-        HALL_DIG_2_EN_DATA.speed_info_acc = 0;
+        HALL_DIG_2_EN_DATA.aver_speed     = 0;
         
         if (HALL_DIG_2_EN_DATA.delta != 0) HALL_DIG_2_EN_DATA.state = 1;
     }

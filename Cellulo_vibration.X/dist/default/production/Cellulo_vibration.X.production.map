@@ -1,4 +1,4 @@
-Microchip Technology Inc, vòÜh
+Microchip Technology Inc, vêÜr
 
 Tool Name:
   c:\program files (x86)\microchip\xc16\v1.21\bin\bin\..\bin/elf-ld.exe
@@ -107,14 +107,14 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x534           0x7ce  (1998)
 .const                       0x734              0x1a4e          0x2775  (10101)
-.text                       0x2182              0x665a          0x9987  (39303)
-.dinit                      0x87dc               0x154           0x1fe  (510)
-.text                       0x8930               0x1ca           0x2af  (687)
+.text                       0x2182              0x6668          0x999c  (39324)
+.dinit                      0x87ea               0x154           0x1fe  (510)
+.text                       0x893e               0x1ca           0x2af  (687)
 .aseba_bytecode             0xe800              0x6400          0x9600  (38400)
 .aseba_settings            0x14c00               0x400           0x600  (1536)
 .boot                      0x15000               0x7fc           0xbfa  (3066)
 
-                     Total program memory used (bytes):        0x17571  (95601) 72%
+                     Total program memory used (bytes):        0x17586  (95622) 72%
 
 
 Data Memory  [Origin = 0x800, Length = 0x4000]
@@ -123,7 +123,7 @@ section                    address      alignment gaps    total length  (dec)
 -------                    -------      --------------    -------------------
 .nbss                        0x800                   0           0x968  (2408)
 .ndata                      0x1168                   0            0xa4  (164)
-_036C596055edb5a5           0x120c                   0            0x72  (114)
+_036CB96055edeca7           0x120c                   0            0x72  (114)
 .nbss                       0x127e                   0            0x44  (68)
 .ndata                      0x12c2                   0            0x38  (56)
 .nbss                       0x12fa                   0            0x30  (48)
@@ -133,8 +133,8 @@ _036C596055edb5a5           0x120c                   0            0x72  (114)
 .nbss                       0x13e6                   0            0x12  (18)
 .ndata                      0x13f8                   0             0x4  (4)
 .bss                        0x13fc                   0          0x28c4  (10436)
-_0367D5A055edb5a5           0x4400                   0           0x200  (512)
-_036D5D8055edb5ad           0x4600                   0            0x20  (32)
+_036725A055edeca7           0x4400                   0           0x200  (512)
+_037D9D8055edee7c           0x4600                   0            0x20  (32)
 
                         Total data memory used (bytes):         0x36e0  (14048) 85%
 
@@ -266,228 +266,228 @@ External Symbols in Program Memory (by address):
                   0x003310                  _hall_dig_enc_init_16
                   0x003328                  _IIR_mov_avg
                   0x003354                  _get_rot_speed
-                  0x003384                  _timer_cb
-                  0x0033f4                  _AsebaNative__system_tunning_osctun
-                  0x00346c                  _AsebaNative_lis331_set_mode
-                  0x0034ec                  _AsebaNative_motor_set_break_mode
-                  0x003522                  _AsebaNative_battery_update_temperature
-                  0x00354c                  _AsebaNative_battery_update_voltage
-                  0x003576                  _update_aseba_variables_read
-                  0x003644                  _update_aseba_variables_write
-                  0x0039f0                  _main
-                  0x003daa                  _dma_init_channel
-                  0x0042e8                  _dma_enable_channel
-                  0x00438c                  _dma_disable_channel
-                  0x004440                  _dma_start_transfer
-                  0x00448c                  _dma_set_priority
-                  0x00453a                  __DMA0Interrupt
-                  0x00456c                  __DMA1Interrupt
-                  0x00459e                  __DMA2Interrupt
-                  0x0045d0                  __DMA3Interrupt
-                  0x004602                  __DMA4Interrupt
-                  0x004634                  __DMA5Interrupt
-                  0x004666                  __DMA6Interrupt
-                  0x004698                  __DMA7Interrupt
-                  0x0046da                  _aseba_atan2
-                  0x0047a0                  _aseba_sin
-                  0x004802                  _aseba_cos
-                  0x004808                  _aseba_sqrt
-                  0x00482c                  _aseba_comb_sort
-                  0x00487a                  _AsebaNative_veccopy
-                  0x0048ac                  _AsebaNative_vecfill
-                  0x0048dc                  _AsebaNative_vecaddscalar
-                  0x00491c                  _AsebaNative_vecadd
-                  0x004964                  _AsebaNative_vecsub
-                  0x0049ac                  _AsebaNative_vecmul
-                  0x0049f2                  _AsebaNative_vecdiv
-                  0x004a66                  _AsebaNative_vecmin
-                  0x004ab2                  _AsebaNative_vecmax
-                  0x004afe                  _AsebaNative_vecclamp
-                  0x004b5e                  _AsebaNative_vecdot
-                  0x004bd8                  _AsebaNative_vecstat
-                  0x004c50                  _AsebaNative_vecargbounds
-                  0x004ca4                  _AsebaNative_vecsort
-                  0x004cc0                  _AsebaNative_mathmuldiv
-                  0x004d48                  _AsebaNative_mathatan2
-                  0x004da0                  _AsebaNative_mathsin
-                  0x004ddc                  _AsebaNative_mathcos
-                  0x004e18                  _AsebaNative_mathrot2
-                  0x004e7c                  _AsebaNative_mathsqrt
-                  0x004eb8                  _AsebaNative_vecnonzerosequence
-                  0x004f9c                  _AsebaSetRandomSeed
-                  0x004fa0                  _AsebaGetRandom
-                  0x004fae                  _AsebaNative_rand
-                  0x0050d6                  _AsebaVMInit
-                  0x0050ea                  _AsebaVMGetEventAddress
-                  0x00510a                  _AsebaVMStep
-                  0x005304                  _AsebaVMEmitNodeSpecificError
-                  0x005356                  _AsebaVMCheckBreakpoint
-                  0x005378                  _AsebaDebugBareRun
-                  0x0053b2                  _AsebaVMSetBreakpoint
-                  0x0053ca                  _AsebaVMClearBreakpoint
-                  0x0053fc                  _AsebaVMClearBreakpoints
-                  0x005402                  _AsebaVMSendExecutionStateChanged
-                  0x005418                  _AsebaDebugBreakpointRun
-                  0x00546e                  _AsebaVMRun
-                  0x00548e                  _AsebaVMSetupEvent
-                  0x0054c6                  _AsebaVMDebugMessage
-                  0x0055c6                  _AsebaVMShouldDropPacket
-                  0x0055f6                  build/default/production/_ext/814541362/encoder.o:_tmr_cb
-                  0x00568c                  build/default/production/_ext/814541362/encoder.o:_tmr2_3_cb
-                  0x0056d2                  build/default/production/_ext/814541362/encoder.o:_ic_cb
-                  0x005750                  build/default/production/_ext/814541362/encoder.o:_ic_tmr3_cb
-                  0x0057d8                  build/default/production/_ext/814541362/encoder.o:_ic_tmr2_cb
-                  0x005892                  _encoder_init
-                  0x0059f4                  _encoder_get_position
-                  0x005a7e                  _encoder_step
-                  0x005ac4                  _encoder_reset
-                  0x005b7c                  __QEIInterrupt
-                  0x005bca                  _adc1_enable
-                  0x005bd0                  _adc1_disable
-                  0x005bd4                  _adc1_init_simple
-                  0x005c6a                  _adc1_start_simple_conversion
-                  0x005c8c                  _amount_of_bits_at_one
-                  0x005ca4                  _log_2
-                  0x005d04                  _adc1_init_scan_dma
-                  0x005ece                  _adc2_enable
-                  0x005ed4                  _adc2_disable
-                  0x005ed8                  _adc2_init_simple
-                  0x005f6a                  _adc2_start_simple_conversion
-                  0x005f8c                  _adc2_init_scan_dma
-                  0x006144                  __ADC1Interrupt
-                  0x00616e                  __ADC2Interrupt
-                  0x006198                  _pwm_init
-                  0x006206                  _pwm_enable_interrupt
-                  0x006250                  _pwm_disable_interrupt
-                  0x006256                  _pwm_disable
-                  0x006298                  _pwm_set_duty
-                  0x0065aa                  _pwm_set_special_event_trigger
-                  0x006604                  _pwm_set_brake
-                  0x00665a                  _pwm_invert
-                  0x006674                  __PWMInterrupt
-                  0x0066a8                  _AsebaResetIntoBootloader
-                  0x0066ac                  build/default/production/_ext/713563870/skel.o:_received_packet_dropped
-                  0x0066ae                  build/default/production/_ext/713563870/skel.o:_sent_packet_dropped
-                  0x006726                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_write
-                  0x006756                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_read
-                  0x006786                  build/default/production/_ext/713563870/skel.o:_error_handler
-                  0x0067ee                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_flash
-                  0x0068b4                  _AsebaPutVmToSleep
-                  0x0068b8                  _AsebaGetLocalEventsDescriptions
-                  0x0068bc                  _AsebaIdle
-                  0x0068c0                  _AsebaNativeFunction
-                  0x0068c8                  _AsebaGetVMDescription
-                  0x0068cc                  _AsebaShouldDropPacket
-                  0x0068d4                  _AsebaGetNativeFunctionsDescriptions
-                  0x0068d8                  _AsebaWriteBytecode
-                  0x0069a6                  _load_settings_from_flash
-                  0x0069f2                  _init_aseba_and_can
-                  0x006a38                  _run_aseba_main_loop
-                  0x006a8a                  _div32by16u
-                  0x006abc                  _div32by16s
-                  0x006ae6                  _motor_csp_step
-                  0x006e62                  _motor_csp_init_32
-                  0x006e6e                  _motor_csp_init_16
-                  0x006e76                  _ic_enable
-                  0x00707e                  _ic_disable
-                  0x0070da                  __IC1Interrupt
-                  0x007104                  __IC2Interrupt
-                  0x00712e                  __IC3Interrupt
-                  0x007158                  __IC4Interrupt
-                  0x007182                  __IC5Interrupt
-                  0x0071ac                  __IC6Interrupt
-                  0x0071d6                  __IC7Interrupt
-                  0x007200                  __IC8Interrupt
-                  0x007336                  _AsebaCanGetMinMultipleOfHeight
-                  0x007342                  _AsebaCanInit
-                  0x007368                  _AsebaCanSendSpecificSource
-                  0x0073d0                  _AsebaCanSend
-                  0x0073d4                  _AsebaCanRecvBufferEmpty
-                  0x0073e4                  _AsebaCanFrameSent
-                  0x0073ee                  _AsebaCanFlushQueue
-                  0x007404                  _AsebaCanRecv
-                  0x0074da                  _AsebaCanFrameReceived
-                  0x007582                  _AsebaCanRecvFreeQueue
-                  0x00778a                  _can_init
-                  0x007848                  _can_send_frame
-                  0x00787e                  _can_disable
-                  0x007882                  _can_enable
-                  0x007886                  _can_is_frame_room
-                  0x007890                  __C1Interrupt
-                  0x007972                  _flash_read_instr
-                  0x00798e                  _flash_read_low
-                  0x0079a6                  _flash_read_high
-                  0x0079be                  _flash_read_chunk
-                  0x007a18                  _flash_erase_page
-                  0x007a52                  _flash_flash_instr
-                  0x007a92                  _flash_prepare_write
-                  0x007ac6                  ___fixup_errata
-                  0x007af6                  _flash_write_instruction
-                  0x007b42                  _flash_write_buffer
-                  0x007bbe                  _flash_complete_write
-                  0x007bd2                  _ds2777_read_8
-                  0x007c28                  _ds2777_read_16
-                  0x007c46                  _ds2777_write_8
-                  0x007c60                  _ds2777_write_16
-                  0x007c7e                  _ds2777_read_romid
-                  0x007cc0                  _ds2777_read_current
-                  0x007d38                  _ds2777_read_voltage
-                  0x007d64                  _ds2777_read_global_voltage
-                  0x007d88                  _ds2777_read_temperature
-                  0x007d96                  _ds2777_read_acc
-                  0x007da2                  _ds2777_set_acc
-                  0x007db2                  _ds2777_init_battery
-                  0x007e12                  _ds2777_set_pack_status
-                  0x007e26                  _ds2777_init
-                  0x007e40                  _i2c_init_master
-                  0x007ee2                  _i2c_master_start_operations
-                  0x007f20                  _i2c_master_is_busy
-                  0x007f44                  _i2c_master_reset
-                  0x007f62                  __MI2C1Interrupt
-                  0x007ff6                  __MI2C2Interrupt
-                  0x00808a                  build/default/production/_ext/1193873232/master_protocol.o:_i2c_master_transfert_op
-                  0x0081ea                  _i2c_master_transfert_async
-                  0x008244                  _i2c_master_transfert_block
-                  0x008264                  _i2c_read
-                  0x008276                  _i2c_write
-                  0x008328                  _AsebaSendMessage
-                  0x008354                  _AsebaSendVariables
-                  0x008388                  _AsebaSendDescription
-                  0x008488                  _AsebaProcessIncomingEvents
-                  0x0084e6                  _gpio_set_opendrain
-                  0x00852e                  _gpio_set_dir
-                  0x008560                  _gpio_write
-                  0x008594                  _gpio_read
-                  0x0085b0                  _gpio_write_word
-                  0x0085b8                  _gpio_read_word
-                  0x0085c0                  _gpio_set_dir_word
-                  0x0085e8                  _gpio_set_opendrain_word
-                  0x008606                  _gpio_write_byte
-                  0x008618                  _gpio_read_byte
-                  0x00862c                  _gpio_set_dir_byte
-                  0x00865c                  _gpio_set_opendrain_byte
-                  0x008686                  build/default/production/_ext/2027221979/lis331.o:_lis331_i2c_cb
-                  0x0086ce                  build/default/production/_ext/2027221979/lis331.o:_lis331_tmr
-                  0x0086e0                  _lis331_init
-                  0x008732                  _lis331_set_mode
-                  0x0089ee                  _clock_init_external_clock_from_n1_m_n2
-                  0x0089f2                  _clock_init_internal_rc_from_n1_m_n2
-                  0x0089fa                  _clock_init_internal_rc_30
-                  0x008a08                  _clock_init_internal_rc_40
-                  0x008a16                  _clock_set_speed
-                  0x008a1e                  _clock_get_cycle_duration
-                  0x008a28                  _clock_get_cycle_frequency
-                  0x008a2e                  _clock_get_target_bogomips
-                  0x008a32                  _clock_disable_idle
-                  0x008a44                  _clock_enable_idle
-                  0x008a56                  _clock_idle
-                  0x008a62                  _clock_delay_us
-                  0x008a78                  _i2c_init
-                  0x008ad0                  _AsebaSendBuffer
-                  0x008ae6                  _AsebaGetBuffer
-                  0x008aee                  build/default/production/_ext/557677410/error.o:_error_default_handler
-                  0x008af2                  _error_report
-                  0x008af6                  _error_register_callback
+                  0x003392                  _timer_cb
+                  0x003402                  _AsebaNative__system_tunning_osctun
+                  0x00347a                  _AsebaNative_lis331_set_mode
+                  0x0034fa                  _AsebaNative_motor_set_break_mode
+                  0x003530                  _AsebaNative_battery_update_temperature
+                  0x00355a                  _AsebaNative_battery_update_voltage
+                  0x003584                  _update_aseba_variables_read
+                  0x003652                  _update_aseba_variables_write
+                  0x0039fe                  _main
+                  0x003db8                  _dma_init_channel
+                  0x0042f6                  _dma_enable_channel
+                  0x00439a                  _dma_disable_channel
+                  0x00444e                  _dma_start_transfer
+                  0x00449a                  _dma_set_priority
+                  0x004548                  __DMA0Interrupt
+                  0x00457a                  __DMA1Interrupt
+                  0x0045ac                  __DMA2Interrupt
+                  0x0045de                  __DMA3Interrupt
+                  0x004610                  __DMA4Interrupt
+                  0x004642                  __DMA5Interrupt
+                  0x004674                  __DMA6Interrupt
+                  0x0046a6                  __DMA7Interrupt
+                  0x0046e8                  _aseba_atan2
+                  0x0047ae                  _aseba_sin
+                  0x004810                  _aseba_cos
+                  0x004816                  _aseba_sqrt
+                  0x00483a                  _aseba_comb_sort
+                  0x004888                  _AsebaNative_veccopy
+                  0x0048ba                  _AsebaNative_vecfill
+                  0x0048ea                  _AsebaNative_vecaddscalar
+                  0x00492a                  _AsebaNative_vecadd
+                  0x004972                  _AsebaNative_vecsub
+                  0x0049ba                  _AsebaNative_vecmul
+                  0x004a00                  _AsebaNative_vecdiv
+                  0x004a74                  _AsebaNative_vecmin
+                  0x004ac0                  _AsebaNative_vecmax
+                  0x004b0c                  _AsebaNative_vecclamp
+                  0x004b6c                  _AsebaNative_vecdot
+                  0x004be6                  _AsebaNative_vecstat
+                  0x004c5e                  _AsebaNative_vecargbounds
+                  0x004cb2                  _AsebaNative_vecsort
+                  0x004cce                  _AsebaNative_mathmuldiv
+                  0x004d56                  _AsebaNative_mathatan2
+                  0x004dae                  _AsebaNative_mathsin
+                  0x004dea                  _AsebaNative_mathcos
+                  0x004e26                  _AsebaNative_mathrot2
+                  0x004e8a                  _AsebaNative_mathsqrt
+                  0x004ec6                  _AsebaNative_vecnonzerosequence
+                  0x004faa                  _AsebaSetRandomSeed
+                  0x004fae                  _AsebaGetRandom
+                  0x004fbc                  _AsebaNative_rand
+                  0x0050e4                  _AsebaVMInit
+                  0x0050f8                  _AsebaVMGetEventAddress
+                  0x005118                  _AsebaVMStep
+                  0x005312                  _AsebaVMEmitNodeSpecificError
+                  0x005364                  _AsebaVMCheckBreakpoint
+                  0x005386                  _AsebaDebugBareRun
+                  0x0053c0                  _AsebaVMSetBreakpoint
+                  0x0053d8                  _AsebaVMClearBreakpoint
+                  0x00540a                  _AsebaVMClearBreakpoints
+                  0x005410                  _AsebaVMSendExecutionStateChanged
+                  0x005426                  _AsebaDebugBreakpointRun
+                  0x00547c                  _AsebaVMRun
+                  0x00549c                  _AsebaVMSetupEvent
+                  0x0054d4                  _AsebaVMDebugMessage
+                  0x0055d4                  _AsebaVMShouldDropPacket
+                  0x005604                  build/default/production/_ext/814541362/encoder.o:_tmr_cb
+                  0x00569a                  build/default/production/_ext/814541362/encoder.o:_tmr2_3_cb
+                  0x0056e0                  build/default/production/_ext/814541362/encoder.o:_ic_cb
+                  0x00575e                  build/default/production/_ext/814541362/encoder.o:_ic_tmr3_cb
+                  0x0057e6                  build/default/production/_ext/814541362/encoder.o:_ic_tmr2_cb
+                  0x0058a0                  _encoder_init
+                  0x005a02                  _encoder_get_position
+                  0x005a8c                  _encoder_step
+                  0x005ad2                  _encoder_reset
+                  0x005b8a                  __QEIInterrupt
+                  0x005bd8                  _adc1_enable
+                  0x005bde                  _adc1_disable
+                  0x005be2                  _adc1_init_simple
+                  0x005c78                  _adc1_start_simple_conversion
+                  0x005c9a                  _amount_of_bits_at_one
+                  0x005cb2                  _log_2
+                  0x005d12                  _adc1_init_scan_dma
+                  0x005edc                  _adc2_enable
+                  0x005ee2                  _adc2_disable
+                  0x005ee6                  _adc2_init_simple
+                  0x005f78                  _adc2_start_simple_conversion
+                  0x005f9a                  _adc2_init_scan_dma
+                  0x006152                  __ADC1Interrupt
+                  0x00617c                  __ADC2Interrupt
+                  0x0061a6                  _pwm_init
+                  0x006214                  _pwm_enable_interrupt
+                  0x00625e                  _pwm_disable_interrupt
+                  0x006264                  _pwm_disable
+                  0x0062a6                  _pwm_set_duty
+                  0x0065b8                  _pwm_set_special_event_trigger
+                  0x006612                  _pwm_set_brake
+                  0x006668                  _pwm_invert
+                  0x006682                  __PWMInterrupt
+                  0x0066b6                  _AsebaResetIntoBootloader
+                  0x0066ba                  build/default/production/_ext/713563870/skel.o:_received_packet_dropped
+                  0x0066bc                  build/default/production/_ext/713563870/skel.o:_sent_packet_dropped
+                  0x006734                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_write
+                  0x006764                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_read
+                  0x006794                  build/default/production/_ext/713563870/skel.o:_error_handler
+                  0x0067fc                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_flash
+                  0x0068c2                  _AsebaPutVmToSleep
+                  0x0068c6                  _AsebaGetLocalEventsDescriptions
+                  0x0068ca                  _AsebaIdle
+                  0x0068ce                  _AsebaNativeFunction
+                  0x0068d6                  _AsebaGetVMDescription
+                  0x0068da                  _AsebaShouldDropPacket
+                  0x0068e2                  _AsebaGetNativeFunctionsDescriptions
+                  0x0068e6                  _AsebaWriteBytecode
+                  0x0069b4                  _load_settings_from_flash
+                  0x006a00                  _init_aseba_and_can
+                  0x006a46                  _run_aseba_main_loop
+                  0x006a98                  _div32by16u
+                  0x006aca                  _div32by16s
+                  0x006af4                  _motor_csp_step
+                  0x006e70                  _motor_csp_init_32
+                  0x006e7c                  _motor_csp_init_16
+                  0x006e84                  _ic_enable
+                  0x00708c                  _ic_disable
+                  0x0070e8                  __IC1Interrupt
+                  0x007112                  __IC2Interrupt
+                  0x00713c                  __IC3Interrupt
+                  0x007166                  __IC4Interrupt
+                  0x007190                  __IC5Interrupt
+                  0x0071ba                  __IC6Interrupt
+                  0x0071e4                  __IC7Interrupt
+                  0x00720e                  __IC8Interrupt
+                  0x007344                  _AsebaCanGetMinMultipleOfHeight
+                  0x007350                  _AsebaCanInit
+                  0x007376                  _AsebaCanSendSpecificSource
+                  0x0073de                  _AsebaCanSend
+                  0x0073e2                  _AsebaCanRecvBufferEmpty
+                  0x0073f2                  _AsebaCanFrameSent
+                  0x0073fc                  _AsebaCanFlushQueue
+                  0x007412                  _AsebaCanRecv
+                  0x0074e8                  _AsebaCanFrameReceived
+                  0x007590                  _AsebaCanRecvFreeQueue
+                  0x007798                  _can_init
+                  0x007856                  _can_send_frame
+                  0x00788c                  _can_disable
+                  0x007890                  _can_enable
+                  0x007894                  _can_is_frame_room
+                  0x00789e                  __C1Interrupt
+                  0x007980                  _flash_read_instr
+                  0x00799c                  _flash_read_low
+                  0x0079b4                  _flash_read_high
+                  0x0079cc                  _flash_read_chunk
+                  0x007a26                  _flash_erase_page
+                  0x007a60                  _flash_flash_instr
+                  0x007aa0                  _flash_prepare_write
+                  0x007ad4                  ___fixup_errata
+                  0x007b04                  _flash_write_instruction
+                  0x007b50                  _flash_write_buffer
+                  0x007bcc                  _flash_complete_write
+                  0x007be0                  _ds2777_read_8
+                  0x007c36                  _ds2777_read_16
+                  0x007c54                  _ds2777_write_8
+                  0x007c6e                  _ds2777_write_16
+                  0x007c8c                  _ds2777_read_romid
+                  0x007cce                  _ds2777_read_current
+                  0x007d46                  _ds2777_read_voltage
+                  0x007d72                  _ds2777_read_global_voltage
+                  0x007d96                  _ds2777_read_temperature
+                  0x007da4                  _ds2777_read_acc
+                  0x007db0                  _ds2777_set_acc
+                  0x007dc0                  _ds2777_init_battery
+                  0x007e20                  _ds2777_set_pack_status
+                  0x007e34                  _ds2777_init
+                  0x007e4e                  _i2c_init_master
+                  0x007ef0                  _i2c_master_start_operations
+                  0x007f2e                  _i2c_master_is_busy
+                  0x007f52                  _i2c_master_reset
+                  0x007f70                  __MI2C1Interrupt
+                  0x008004                  __MI2C2Interrupt
+                  0x008098                  build/default/production/_ext/1193873232/master_protocol.o:_i2c_master_transfert_op
+                  0x0081f8                  _i2c_master_transfert_async
+                  0x008252                  _i2c_master_transfert_block
+                  0x008272                  _i2c_read
+                  0x008284                  _i2c_write
+                  0x008336                  _AsebaSendMessage
+                  0x008362                  _AsebaSendVariables
+                  0x008396                  _AsebaSendDescription
+                  0x008496                  _AsebaProcessIncomingEvents
+                  0x0084f4                  _gpio_set_opendrain
+                  0x00853c                  _gpio_set_dir
+                  0x00856e                  _gpio_write
+                  0x0085a2                  _gpio_read
+                  0x0085be                  _gpio_write_word
+                  0x0085c6                  _gpio_read_word
+                  0x0085ce                  _gpio_set_dir_word
+                  0x0085f6                  _gpio_set_opendrain_word
+                  0x008614                  _gpio_write_byte
+                  0x008626                  _gpio_read_byte
+                  0x00863a                  _gpio_set_dir_byte
+                  0x00866a                  _gpio_set_opendrain_byte
+                  0x008694                  build/default/production/_ext/2027221979/lis331.o:_lis331_i2c_cb
+                  0x0086dc                  build/default/production/_ext/2027221979/lis331.o:_lis331_tmr
+                  0x0086ee                  _lis331_init
+                  0x008740                  _lis331_set_mode
+                  0x0089fc                  _clock_init_external_clock_from_n1_m_n2
+                  0x008a00                  _clock_init_internal_rc_from_n1_m_n2
+                  0x008a08                  _clock_init_internal_rc_30
+                  0x008a16                  _clock_init_internal_rc_40
+                  0x008a24                  _clock_set_speed
+                  0x008a2c                  _clock_get_cycle_duration
+                  0x008a36                  _clock_get_cycle_frequency
+                  0x008a3c                  _clock_get_target_bogomips
+                  0x008a40                  _clock_disable_idle
+                  0x008a52                  _clock_enable_idle
+                  0x008a64                  _clock_idle
+                  0x008a70                  _clock_delay_us
+                  0x008a86                  _i2c_init
+                  0x008ade                  _AsebaSendBuffer
+                  0x008af4                  _AsebaGetBuffer
+                  0x008afc                  build/default/production/_ext/557677410/error.o:_error_default_handler
+                  0x008b00                  _error_report
+                  0x008b04                  _error_register_callback
                   0x00e800                  _aseba_flash
                   0x00ec00                  _aseba_flash1
                   0x00f000                  _aseba_flash2
@@ -518,24 +518,24 @@ External Symbols in Program Memory (by address):
 
 External Symbols in Program Memory (by name):
 
-                  0x0073ee                  _AsebaCanFlushQueue
-                  0x0074da                  _AsebaCanFrameReceived
-                  0x0073e4                  _AsebaCanFrameSent
-                  0x007336                  _AsebaCanGetMinMultipleOfHeight
-                  0x007342                  _AsebaCanInit
-                  0x007404                  _AsebaCanRecv
-                  0x0073d4                  _AsebaCanRecvBufferEmpty
-                  0x007582                  _AsebaCanRecvFreeQueue
-                  0x0073d0                  _AsebaCanSend
-                  0x007368                  _AsebaCanSendSpecificSource
-                  0x005378                  _AsebaDebugBareRun
-                  0x005418                  _AsebaDebugBreakpointRun
-                  0x008ae6                  _AsebaGetBuffer
-                  0x0068b8                  _AsebaGetLocalEventsDescriptions
-                  0x0068d4                  _AsebaGetNativeFunctionsDescriptions
-                  0x004fa0                  _AsebaGetRandom
-                  0x0068c8                  _AsebaGetVMDescription
-                  0x0068bc                  _AsebaIdle
+                  0x0073fc                  _AsebaCanFlushQueue
+                  0x0074e8                  _AsebaCanFrameReceived
+                  0x0073f2                  _AsebaCanFrameSent
+                  0x007344                  _AsebaCanGetMinMultipleOfHeight
+                  0x007350                  _AsebaCanInit
+                  0x007412                  _AsebaCanRecv
+                  0x0073e2                  _AsebaCanRecvBufferEmpty
+                  0x007590                  _AsebaCanRecvFreeQueue
+                  0x0073de                  _AsebaCanSend
+                  0x007376                  _AsebaCanSendSpecificSource
+                  0x005386                  _AsebaDebugBareRun
+                  0x005426                  _AsebaDebugBreakpointRun
+                  0x008af4                  _AsebaGetBuffer
+                  0x0068c6                  _AsebaGetLocalEventsDescriptions
+                  0x0068e2                  _AsebaGetNativeFunctionsDescriptions
+                  0x004fae                  _AsebaGetRandom
+                  0x0068d6                  _AsebaGetVMDescription
+                  0x0068ca                  _AsebaIdle
                   0x0018c0                  _AsebaNativeDescription_mathatan2
                   0x00194c                  _AsebaNativeDescription_mathcos
                   0x00186a                  _AsebaNativeDescription_mathmuldiv
@@ -558,82 +558,82 @@ External Symbols in Program Memory (by name):
                   0x001816                  _AsebaNativeDescription_vecsort
                   0x00176c                  _AsebaNativeDescription_vecstat
                   0x0014fc                  _AsebaNativeDescription_vecsub
-                  0x0068c0                  _AsebaNativeFunction
-                  0x0033f4                  _AsebaNative__system_tunning_osctun
-                  0x003522                  _AsebaNative_battery_update_temperature
-                  0x00354c                  _AsebaNative_battery_update_voltage
-                  0x00346c                  _AsebaNative_lis331_set_mode
-                  0x004d48                  _AsebaNative_mathatan2
-                  0x004ddc                  _AsebaNative_mathcos
-                  0x004cc0                  _AsebaNative_mathmuldiv
-                  0x004e18                  _AsebaNative_mathrot2
-                  0x004da0                  _AsebaNative_mathsin
-                  0x004e7c                  _AsebaNative_mathsqrt
-                  0x0034ec                  _AsebaNative_motor_set_break_mode
-                  0x004fae                  _AsebaNative_rand
-                  0x00491c                  _AsebaNative_vecadd
-                  0x0048dc                  _AsebaNative_vecaddscalar
-                  0x004c50                  _AsebaNative_vecargbounds
-                  0x004afe                  _AsebaNative_vecclamp
-                  0x00487a                  _AsebaNative_veccopy
-                  0x0049f2                  _AsebaNative_vecdiv
-                  0x004b5e                  _AsebaNative_vecdot
-                  0x0048ac                  _AsebaNative_vecfill
-                  0x004ab2                  _AsebaNative_vecmax
-                  0x004a66                  _AsebaNative_vecmin
-                  0x0049ac                  _AsebaNative_vecmul
-                  0x004eb8                  _AsebaNative_vecnonzerosequence
-                  0x004ca4                  _AsebaNative_vecsort
-                  0x004bd8                  _AsebaNative_vecstat
-                  0x004964                  _AsebaNative_vecsub
-                  0x008488                  _AsebaProcessIncomingEvents
-                  0x0068b4                  _AsebaPutVmToSleep
-                  0x0066a8                  _AsebaResetIntoBootloader
-                  0x008ad0                  _AsebaSendBuffer
-                  0x008388                  _AsebaSendDescription
-                  0x008328                  _AsebaSendMessage
-                  0x008354                  _AsebaSendVariables
-                  0x004f9c                  _AsebaSetRandomSeed
-                  0x0068cc                  _AsebaShouldDropPacket
-                  0x005356                  _AsebaVMCheckBreakpoint
-                  0x0053ca                  _AsebaVMClearBreakpoint
-                  0x0053fc                  _AsebaVMClearBreakpoints
-                  0x0054c6                  _AsebaVMDebugMessage
-                  0x005304                  _AsebaVMEmitNodeSpecificError
-                  0x0050ea                  _AsebaVMGetEventAddress
-                  0x0050d6                  _AsebaVMInit
-                  0x00546e                  _AsebaVMRun
-                  0x005402                  _AsebaVMSendExecutionStateChanged
-                  0x0053b2                  _AsebaVMSetBreakpoint
-                  0x00548e                  _AsebaVMSetupEvent
-                  0x0055c6                  _AsebaVMShouldDropPacket
-                  0x00510a                  _AsebaVMStep
-                  0x0068d8                  _AsebaWriteBytecode
+                  0x0068ce                  _AsebaNativeFunction
+                  0x003402                  _AsebaNative__system_tunning_osctun
+                  0x003530                  _AsebaNative_battery_update_temperature
+                  0x00355a                  _AsebaNative_battery_update_voltage
+                  0x00347a                  _AsebaNative_lis331_set_mode
+                  0x004d56                  _AsebaNative_mathatan2
+                  0x004dea                  _AsebaNative_mathcos
+                  0x004cce                  _AsebaNative_mathmuldiv
+                  0x004e26                  _AsebaNative_mathrot2
+                  0x004dae                  _AsebaNative_mathsin
+                  0x004e8a                  _AsebaNative_mathsqrt
+                  0x0034fa                  _AsebaNative_motor_set_break_mode
+                  0x004fbc                  _AsebaNative_rand
+                  0x00492a                  _AsebaNative_vecadd
+                  0x0048ea                  _AsebaNative_vecaddscalar
+                  0x004c5e                  _AsebaNative_vecargbounds
+                  0x004b0c                  _AsebaNative_vecclamp
+                  0x004888                  _AsebaNative_veccopy
+                  0x004a00                  _AsebaNative_vecdiv
+                  0x004b6c                  _AsebaNative_vecdot
+                  0x0048ba                  _AsebaNative_vecfill
+                  0x004ac0                  _AsebaNative_vecmax
+                  0x004a74                  _AsebaNative_vecmin
+                  0x0049ba                  _AsebaNative_vecmul
+                  0x004ec6                  _AsebaNative_vecnonzerosequence
+                  0x004cb2                  _AsebaNative_vecsort
+                  0x004be6                  _AsebaNative_vecstat
+                  0x004972                  _AsebaNative_vecsub
+                  0x008496                  _AsebaProcessIncomingEvents
+                  0x0068c2                  _AsebaPutVmToSleep
+                  0x0066b6                  _AsebaResetIntoBootloader
+                  0x008ade                  _AsebaSendBuffer
+                  0x008396                  _AsebaSendDescription
+                  0x008336                  _AsebaSendMessage
+                  0x008362                  _AsebaSendVariables
+                  0x004faa                  _AsebaSetRandomSeed
+                  0x0068da                  _AsebaShouldDropPacket
+                  0x005364                  _AsebaVMCheckBreakpoint
+                  0x0053d8                  _AsebaVMClearBreakpoint
+                  0x00540a                  _AsebaVMClearBreakpoints
+                  0x0054d4                  _AsebaVMDebugMessage
+                  0x005312                  _AsebaVMEmitNodeSpecificError
+                  0x0050f8                  _AsebaVMGetEventAddress
+                  0x0050e4                  _AsebaVMInit
+                  0x00547c                  _AsebaVMRun
+                  0x005410                  _AsebaVMSendExecutionStateChanged
+                  0x0053c0                  _AsebaVMSetBreakpoint
+                  0x00549c                  _AsebaVMSetupEvent
+                  0x0055d4                  _AsebaVMShouldDropPacket
+                  0x005118                  _AsebaVMStep
+                  0x0068e6                  _AsebaWriteBytecode
                   0x003328                  _IIR_mov_avg
-                  0x006144                  __ADC1Interrupt
-                  0x00616e                  __ADC2Interrupt
-                  0x007890                  __C1Interrupt
-                  0x00453a                  __DMA0Interrupt
-                  0x00456c                  __DMA1Interrupt
-                  0x00459e                  __DMA2Interrupt
-                  0x0045d0                  __DMA3Interrupt
-                  0x004602                  __DMA4Interrupt
-                  0x004634                  __DMA5Interrupt
-                  0x004666                  __DMA6Interrupt
-                  0x004698                  __DMA7Interrupt
+                  0x006152                  __ADC1Interrupt
+                  0x00617c                  __ADC2Interrupt
+                  0x00789e                  __C1Interrupt
+                  0x004548                  __DMA0Interrupt
+                  0x00457a                  __DMA1Interrupt
+                  0x0045ac                  __DMA2Interrupt
+                  0x0045de                  __DMA3Interrupt
+                  0x004610                  __DMA4Interrupt
+                  0x004642                  __DMA5Interrupt
+                  0x004674                  __DMA6Interrupt
+                  0x0046a6                  __DMA7Interrupt
                   0x000388                  __DefaultInterrupt
-                  0x0070da                  __IC1Interrupt
-                  0x007104                  __IC2Interrupt
-                  0x00712e                  __IC3Interrupt
-                  0x007158                  __IC4Interrupt
-                  0x007182                  __IC5Interrupt
-                  0x0071ac                  __IC6Interrupt
-                  0x0071d6                  __IC7Interrupt
-                  0x007200                  __IC8Interrupt
-                  0x007f62                  __MI2C1Interrupt
-                  0x007ff6                  __MI2C2Interrupt
-                  0x006674                  __PWMInterrupt
-                  0x005b7c                  __QEIInterrupt
+                  0x0070e8                  __IC1Interrupt
+                  0x007112                  __IC2Interrupt
+                  0x00713c                  __IC3Interrupt
+                  0x007166                  __IC4Interrupt
+                  0x007190                  __IC5Interrupt
+                  0x0071ba                  __IC6Interrupt
+                  0x0071e4                  __IC7Interrupt
+                  0x00720e                  __IC8Interrupt
+                  0x007f70                  __MI2C1Interrupt
+                  0x008004                  __MI2C2Interrupt
+                  0x006682                  __PWMInterrupt
+                  0x005b8a                  __QEIInterrupt
                   0x002e26                  __T1Interrupt
                   0x002e4c                  __T2Interrupt
                   0x002e72                  __T3Interrupt
@@ -646,7 +646,7 @@ External Symbols in Program Memory (by name):
                   0x015000                  ___bootloader
                   0x000542                  ___divdi3
                   0x00038c                  ___divsi3
-                  0x007ac6                  ___fixup_errata
+                  0x007ad4                  ___fixup_errata
                   0x0005a2                  ___moddi3
                   0x0005fe                  ___muldi3
                   0x0003ca                  ___mulp32eds3
@@ -661,20 +661,20 @@ External Symbols in Program Memory (by name):
                   0x000236                  __data_init_standard
                   0x000226                  __psv_init
                   0x000200                  __resetPRI
-                  0x005bd0                  _adc1_disable
-                  0x005bca                  _adc1_enable
-                  0x005d04                  _adc1_init_scan_dma
-                  0x005bd4                  _adc1_init_simple
-                  0x005c6a                  _adc1_start_simple_conversion
-                  0x005ed4                  _adc2_disable
-                  0x005ece                  _adc2_enable
-                  0x005f8c                  _adc2_init_scan_dma
-                  0x005ed8                  _adc2_init_simple
-                  0x005f6a                  _adc2_start_simple_conversion
-                  0x005c8c                  _amount_of_bits_at_one
-                  0x0046da                  _aseba_atan2
-                  0x00482c                  _aseba_comb_sort
-                  0x004802                  _aseba_cos
+                  0x005bde                  _adc1_disable
+                  0x005bd8                  _adc1_enable
+                  0x005d12                  _adc1_init_scan_dma
+                  0x005be2                  _adc1_init_simple
+                  0x005c78                  _adc1_start_simple_conversion
+                  0x005ee2                  _adc2_disable
+                  0x005edc                  _adc2_enable
+                  0x005f9a                  _adc2_init_scan_dma
+                  0x005ee6                  _adc2_init_simple
+                  0x005f78                  _adc2_start_simple_conversion
+                  0x005c9a                  _amount_of_bits_at_one
+                  0x0046e8                  _aseba_atan2
+                  0x00483a                  _aseba_comb_sort
+                  0x004810                  _aseba_cos
                   0x00e800                  _aseba_flash
                   0x00ec00                  _aseba_flash1
                   0x011000                  _aseba_flash10
@@ -701,92 +701,92 @@ External Symbols in Program Memory (by name):
                   0x010800                  _aseba_flash8
                   0x010c00                  _aseba_flash9
                   0x014c00                  _aseba_settings_flash
-                  0x0047a0                  _aseba_sin
-                  0x004808                  _aseba_sqrt
-                  0x00787e                  _can_disable
-                  0x007882                  _can_enable
-                  0x00778a                  _can_init
-                  0x007886                  _can_is_frame_room
-                  0x007848                  _can_send_frame
-                  0x008a62                  _clock_delay_us
-                  0x008a32                  _clock_disable_idle
-                  0x008a44                  _clock_enable_idle
-                  0x008a1e                  _clock_get_cycle_duration
-                  0x008a28                  _clock_get_cycle_frequency
-                  0x008a2e                  _clock_get_target_bogomips
-                  0x008a56                  _clock_idle
-                  0x0089ee                  _clock_init_external_clock_from_n1_m_n2
-                  0x0089fa                  _clock_init_internal_rc_30
-                  0x008a08                  _clock_init_internal_rc_40
-                  0x0089f2                  _clock_init_internal_rc_from_n1_m_n2
-                  0x008a16                  _clock_set_speed
-                  0x006abc                  _div32by16s
-                  0x006a8a                  _div32by16u
-                  0x00438c                  _dma_disable_channel
-                  0x0042e8                  _dma_enable_channel
-                  0x003daa                  _dma_init_channel
-                  0x00448c                  _dma_set_priority
-                  0x004440                  _dma_start_transfer
-                  0x007e26                  _ds2777_init
-                  0x007db2                  _ds2777_init_battery
-                  0x007c28                  _ds2777_read_16
-                  0x007bd2                  _ds2777_read_8
-                  0x007d96                  _ds2777_read_acc
-                  0x007cc0                  _ds2777_read_current
-                  0x007d64                  _ds2777_read_global_voltage
-                  0x007c7e                  _ds2777_read_romid
-                  0x007d88                  _ds2777_read_temperature
-                  0x007d38                  _ds2777_read_voltage
-                  0x007da2                  _ds2777_set_acc
-                  0x007e12                  _ds2777_set_pack_status
-                  0x007c60                  _ds2777_write_16
-                  0x007c46                  _ds2777_write_8
-                  0x0059f4                  _encoder_get_position
-                  0x005892                  _encoder_init
-                  0x005ac4                  _encoder_reset
-                  0x005a7e                  _encoder_step
-                  0x008af6                  _error_register_callback
-                  0x008af2                  _error_report
-                  0x007bbe                  _flash_complete_write
-                  0x007a18                  _flash_erase_page
-                  0x007a52                  _flash_flash_instr
-                  0x007a92                  _flash_prepare_write
-                  0x0079be                  _flash_read_chunk
-                  0x0079a6                  _flash_read_high
-                  0x007972                  _flash_read_instr
-                  0x00798e                  _flash_read_low
-                  0x007b42                  _flash_write_buffer
-                  0x007af6                  _flash_write_instruction
+                  0x0047ae                  _aseba_sin
+                  0x004816                  _aseba_sqrt
+                  0x00788c                  _can_disable
+                  0x007890                  _can_enable
+                  0x007798                  _can_init
+                  0x007894                  _can_is_frame_room
+                  0x007856                  _can_send_frame
+                  0x008a70                  _clock_delay_us
+                  0x008a40                  _clock_disable_idle
+                  0x008a52                  _clock_enable_idle
+                  0x008a2c                  _clock_get_cycle_duration
+                  0x008a36                  _clock_get_cycle_frequency
+                  0x008a3c                  _clock_get_target_bogomips
+                  0x008a64                  _clock_idle
+                  0x0089fc                  _clock_init_external_clock_from_n1_m_n2
+                  0x008a08                  _clock_init_internal_rc_30
+                  0x008a16                  _clock_init_internal_rc_40
+                  0x008a00                  _clock_init_internal_rc_from_n1_m_n2
+                  0x008a24                  _clock_set_speed
+                  0x006aca                  _div32by16s
+                  0x006a98                  _div32by16u
+                  0x00439a                  _dma_disable_channel
+                  0x0042f6                  _dma_enable_channel
+                  0x003db8                  _dma_init_channel
+                  0x00449a                  _dma_set_priority
+                  0x00444e                  _dma_start_transfer
+                  0x007e34                  _ds2777_init
+                  0x007dc0                  _ds2777_init_battery
+                  0x007c36                  _ds2777_read_16
+                  0x007be0                  _ds2777_read_8
+                  0x007da4                  _ds2777_read_acc
+                  0x007cce                  _ds2777_read_current
+                  0x007d72                  _ds2777_read_global_voltage
+                  0x007c8c                  _ds2777_read_romid
+                  0x007d96                  _ds2777_read_temperature
+                  0x007d46                  _ds2777_read_voltage
+                  0x007db0                  _ds2777_set_acc
+                  0x007e20                  _ds2777_set_pack_status
+                  0x007c6e                  _ds2777_write_16
+                  0x007c54                  _ds2777_write_8
+                  0x005a02                  _encoder_get_position
+                  0x0058a0                  _encoder_init
+                  0x005ad2                  _encoder_reset
+                  0x005a8c                  _encoder_step
+                  0x008b04                  _error_register_callback
+                  0x008b00                  _error_report
+                  0x007bcc                  _flash_complete_write
+                  0x007a26                  _flash_erase_page
+                  0x007a60                  _flash_flash_instr
+                  0x007aa0                  _flash_prepare_write
+                  0x0079cc                  _flash_read_chunk
+                  0x0079b4                  _flash_read_high
+                  0x007980                  _flash_read_instr
+                  0x00799c                  _flash_read_low
+                  0x007b50                  _flash_write_buffer
+                  0x007b04                  _flash_write_instruction
                   0x003354                  _get_rot_speed
-                  0x008594                  _gpio_read
-                  0x008618                  _gpio_read_byte
-                  0x0085b8                  _gpio_read_word
-                  0x00852e                  _gpio_set_dir
-                  0x00862c                  _gpio_set_dir_byte
-                  0x0085c0                  _gpio_set_dir_word
-                  0x0084e6                  _gpio_set_opendrain
-                  0x00865c                  _gpio_set_opendrain_byte
-                  0x0085e8                  _gpio_set_opendrain_word
-                  0x008560                  _gpio_write
-                  0x008606                  _gpio_write_byte
-                  0x0085b0                  _gpio_write_word
+                  0x0085a2                  _gpio_read
+                  0x008626                  _gpio_read_byte
+                  0x0085c6                  _gpio_read_word
+                  0x00853c                  _gpio_set_dir
+                  0x00863a                  _gpio_set_dir_byte
+                  0x0085ce                  _gpio_set_dir_word
+                  0x0084f4                  _gpio_set_opendrain
+                  0x00866a                  _gpio_set_opendrain_byte
+                  0x0085f6                  _gpio_set_opendrain_word
+                  0x00856e                  _gpio_write
+                  0x008614                  _gpio_write_byte
+                  0x0085be                  _gpio_write_word
                   0x003310                  _hall_dig_enc_init_16
-                  0x008a78                  _i2c_init
-                  0x007e40                  _i2c_init_master
-                  0x007f20                  _i2c_master_is_busy
-                  0x007f44                  _i2c_master_reset
-                  0x007ee2                  _i2c_master_start_operations
-                  0x0081ea                  _i2c_master_transfert_async
-                  0x008244                  _i2c_master_transfert_block
-                  0x008264                  _i2c_read
-                  0x008276                  _i2c_write
-                  0x00707e                  _ic_disable
-                  0x006e76                  _ic_enable
-                  0x0069f2                  _init_aseba_and_can
-                  0x0086e0                  _lis331_init
-                  0x008732                  _lis331_set_mode
-                  0x0069a6                  _load_settings_from_flash
-                  0x005ca4                  _log_2
+                  0x008a86                  _i2c_init
+                  0x007e4e                  _i2c_init_master
+                  0x007f2e                  _i2c_master_is_busy
+                  0x007f52                  _i2c_master_reset
+                  0x007ef0                  _i2c_master_start_operations
+                  0x0081f8                  _i2c_master_transfert_async
+                  0x008252                  _i2c_master_transfert_block
+                  0x008272                  _i2c_read
+                  0x008284                  _i2c_write
+                  0x00708c                  _ic_disable
+                  0x006e84                  _ic_enable
+                  0x006a00                  _init_aseba_and_can
+                  0x0086ee                  _lis331_init
+                  0x008740                  _lis331_set_mode
+                  0x0069b4                  _load_settings_from_flash
+                  0x005cb2                  _log_2
                   0x00300a                  _m0_overcurrent_cb
                   0x0031ce                  _m0_timer_cb
                   0x002ffa                  _m0_update_cb
@@ -796,27 +796,27 @@ External Symbols in Program Memory (by name):
                   0x0030ba                  _m2_overcurrent_cb
                   0x0032a6                  _m2_timer_cb
                   0x0030aa                  _m2_update_cb
-                  0x0039f0                  _main
+                  0x0039fe                  _main
                   0x000694                  _memcmp
                   0x0006c8                  _memcpy
                   0x0006d6                  _memset
-                  0x006e6e                  _motor_csp_init_16
-                  0x006e62                  _motor_csp_init_32
-                  0x006ae6                  _motor_csp_step
-                  0x006256                  _pwm_disable
-                  0x006250                  _pwm_disable_interrupt
-                  0x006206                  _pwm_enable_interrupt
-                  0x006198                  _pwm_init
-                  0x00665a                  _pwm_invert
-                  0x006604                  _pwm_set_brake
-                  0x006298                  _pwm_set_duty
-                  0x0065aa                  _pwm_set_special_event_trigger
-                  0x006a38                  _run_aseba_main_loop
+                  0x006e7c                  _motor_csp_init_16
+                  0x006e70                  _motor_csp_init_32
+                  0x006af4                  _motor_csp_step
+                  0x006264                  _pwm_disable
+                  0x00625e                  _pwm_disable_interrupt
+                  0x006214                  _pwm_enable_interrupt
+                  0x0061a6                  _pwm_init
+                  0x006668                  _pwm_invert
+                  0x006612                  _pwm_set_brake
+                  0x0062a6                  _pwm_set_duty
+                  0x0065b8                  _pwm_set_special_event_trigger
+                  0x006a46                  _run_aseba_main_loop
                   0x0006e4                  _strcat
                   0x0006fa                  _strcpy
                   0x000706                  _strlen
                   0x000714                  _strncat
-                  0x003384                  _timer_cb
+                  0x003392                  _timer_cb
                   0x00247c                  _timer_disable
                   0x002cb6                  _timer_disable_interrupt
                   0x002480                  _timer_enable
@@ -836,28 +836,28 @@ External Symbols in Program Memory (by name):
                   0x0024e6                  _timer_set_period
                   0x002484                  _timer_set_value
                   0x00291e                  _timer_use_gated_time_accumulation
-                  0x003576                  _update_aseba_variables_read
-                  0x003644                  _update_aseba_variables_write
+                  0x003584                  _update_aseba_variables_read
+                  0x003652                  _update_aseba_variables_write
                   0x000f14                  _vmDescription
-                  0x00808a                  build/default/production/_ext/1193873232/master_protocol.o:_i2c_master_transfert_op
+                  0x008098                  build/default/production/_ext/1193873232/master_protocol.o:_i2c_master_transfert_op
                   0x0030cc                  build/default/production/_ext/1472/main.o:_acc_cb
                   0x0030e6                  build/default/production/_ext/1472/main.o:_adc_cb
                   0x0030da                  build/default/production/_ext/1472/main.o:_timer_period_cb
                   0x0030e0                  build/default/production/_ext/1472/main.o:_timer_pulse_cb
-                  0x008686                  build/default/production/_ext/2027221979/lis331.o:_lis331_i2c_cb
-                  0x0086ce                  build/default/production/_ext/2027221979/lis331.o:_lis331_tmr
-                  0x008aee                  build/default/production/_ext/557677410/error.o:_error_default_handler
-                  0x0067ee                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_flash
-                  0x006756                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_read
-                  0x006726                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_write
-                  0x006786                  build/default/production/_ext/713563870/skel.o:_error_handler
-                  0x0066ac                  build/default/production/_ext/713563870/skel.o:_received_packet_dropped
-                  0x0066ae                  build/default/production/_ext/713563870/skel.o:_sent_packet_dropped
-                  0x0056d2                  build/default/production/_ext/814541362/encoder.o:_ic_cb
-                  0x0057d8                  build/default/production/_ext/814541362/encoder.o:_ic_tmr2_cb
-                  0x005750                  build/default/production/_ext/814541362/encoder.o:_ic_tmr3_cb
-                  0x00568c                  build/default/production/_ext/814541362/encoder.o:_tmr2_3_cb
-                  0x0055f6                  build/default/production/_ext/814541362/encoder.o:_tmr_cb
+                  0x008694                  build/default/production/_ext/2027221979/lis331.o:_lis331_i2c_cb
+                  0x0086dc                  build/default/production/_ext/2027221979/lis331.o:_lis331_tmr
+                  0x008afc                  build/default/production/_ext/557677410/error.o:_error_default_handler
+                  0x0067fc                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_flash
+                  0x006764                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_read
+                  0x006734                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_write
+                  0x006794                  build/default/production/_ext/713563870/skel.o:_error_handler
+                  0x0066ba                  build/default/production/_ext/713563870/skel.o:_received_packet_dropped
+                  0x0066bc                  build/default/production/_ext/713563870/skel.o:_sent_packet_dropped
+                  0x0056e0                  build/default/production/_ext/814541362/encoder.o:_ic_cb
+                  0x0057e6                  build/default/production/_ext/814541362/encoder.o:_ic_tmr2_cb
+                  0x00575e                  build/default/production/_ext/814541362/encoder.o:_ic_tmr3_cb
+                  0x00569a                  build/default/production/_ext/814541362/encoder.o:_tmr2_3_cb
+                  0x005604                  build/default/production/_ext/814541362/encoder.o:_tmr_cb
 
 Memory Configuration
 
@@ -1061,7 +1061,7 @@ __FUID3           0xf80016          0x2
 .comment
  *(.comment)
 
-.debug_info       0x000000      0x1fb48
+.debug_info       0x000000      0x1fb4b
  *(.debug_info)
  .debug_info      0x000000       0x1f8f build/default/production/_ext/1140433100/natives.o
  .debug_info      0x001f8f       0x1476 build/default/production/_ext/1140433100/vm.o
@@ -1086,7 +1086,7 @@ __FUID3           0xf80016          0x2
  .debug_info      0x01aaba        0x380 build/default/production/_ext/2027221979/lis331.o
  .debug_info      0x01ae3a       0x15f6 build/default/production/_ext/1193873232/master.o
  .debug_info      0x01c430        0x8a0 build/default/production/_ext/1193873232/master_protocol.o
- .debug_info      0x01ccd0       0x2e78 build/default/production/_ext/1472/main.o
+ .debug_info      0x01ccd0       0x2e7b build/default/production/_ext/1472/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000       0x2942
@@ -1116,7 +1116,7 @@ __FUID3           0xf80016          0x2
  .debug_abbrev    0x002484        0x19a build/default/production/_ext/1193873232/master_protocol.o
  .debug_abbrev    0x00261e        0x324 build/default/production/_ext/1472/main.o
 
-.debug_line       0x000000       0xafc9
+.debug_line       0x000000       0xafd1
  *(.debug_line)
  .debug_line      0x000000        0xfde build/default/production/_ext/1140433100/natives.o
  .debug_line      0x000fde        0xa04 build/default/production/_ext/1140433100/vm.o
@@ -1141,7 +1141,7 @@ __FUID3           0xf80016          0x2
  .debug_line      0x00923f        0x26a build/default/production/_ext/2027221979/lis331.o
  .debug_line      0x0094a9        0x467 build/default/production/_ext/1193873232/master.o
  .debug_line      0x009910        0x446 build/default/production/_ext/1193873232/master_protocol.o
- .debug_line      0x009d56       0x1273 build/default/production/_ext/1472/main.o
+ .debug_line      0x009d56       0x127b build/default/production/_ext/1472/main.o
 
 .debug_frame      0x000000       0x1838
  *(.debug_frame)
@@ -1318,11 +1318,11 @@ __FUID3           0xf80016          0x2
                   0x000010          0x4 LONG 0x388 DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
                   0x000012          0x4 LONG 0x388 DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
                   0x000014          0x4 LONG 0x388 DEFINED (__INT0Interrupt)?ABSOLUTE (__INT0Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000016          0x4 LONG 0x70da DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000016          0x4 LONG 0x70e8 DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000018          0x4 LONG 0x388 DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00001a          0x4 LONG 0x2e26 DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00001c          0x4 LONG 0x453a DEFINED (__DMA0Interrupt)?ABSOLUTE (__DMA0Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00001e          0x4 LONG 0x7104 DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00001c          0x4 LONG 0x4548 DEFINED (__DMA0Interrupt)?ABSOLUTE (__DMA0Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00001e          0x4 LONG 0x7112 DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000020          0x4 LONG 0x388 DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000022          0x4 LONG 0x2e4c DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000024          0x4 LONG 0x2e72 DEFINED (__T3Interrupt)?ABSOLUTE (__T3Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1330,18 +1330,18 @@ __FUID3           0xf80016          0x2
                   0x000028          0x4 LONG 0x388 DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002a          0x4 LONG 0x388 DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00002c          0x4 LONG 0x388 DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00002e          0x4 LONG 0x6144 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000030          0x4 LONG 0x456c DEFINED (__DMA1Interrupt)?ABSOLUTE (__DMA1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00002e          0x4 LONG 0x6152 DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000030          0x4 LONG 0x457a DEFINED (__DMA1Interrupt)?ABSOLUTE (__DMA1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000032          0x4 LONG 0x388 DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000034          0x4 LONG 0x388 DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000036          0x4 LONG 0x7f62 DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000036          0x4 LONG 0x7f70 DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000038          0x4 LONG 0x388 DEFINED (__CMPInterrupt)?ABSOLUTE (__CMPInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003a          0x4 LONG 0x388 DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00003c          0x4 LONG 0x388 DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00003e          0x4 LONG 0x616e DEFINED (__ADC2Interrupt)?ABSOLUTE (__ADC2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000040          0x4 LONG 0x71d6 DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000042          0x4 LONG 0x7200 DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000044          0x4 LONG 0x459e DEFINED (__DMA2Interrupt)?ABSOLUTE (__DMA2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00003e          0x4 LONG 0x617c DEFINED (__ADC2Interrupt)?ABSOLUTE (__ADC2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000040          0x4 LONG 0x71e4 DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000042          0x4 LONG 0x720e DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000044          0x4 LONG 0x45ac DEFINED (__DMA2Interrupt)?ABSOLUTE (__DMA2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000046          0x4 LONG 0x388 DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000048          0x4 LONG 0x388 DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00004a          0x4 LONG 0x2ea6 DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1352,41 +1352,41 @@ __FUID3           0xf80016          0x2
                   0x000054          0x4 LONG 0x388 DEFINED (__SPI2ErrInterrupt)?ABSOLUTE (__SPI2ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000056          0x4 LONG 0x388 DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000058          0x4 LONG 0x388 DEFINED (__C1RxRdyInterrupt)?ABSOLUTE (__C1RxRdyInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00005a          0x4 LONG 0x7890 DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00005c          0x4 LONG 0x45d0 DEFINED (__DMA3Interrupt)?ABSOLUTE (__DMA3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00005e          0x4 LONG 0x712e DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000060          0x4 LONG 0x7158 DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000062          0x4 LONG 0x7182 DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000064          0x4 LONG 0x71ac DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00005a          0x4 LONG 0x789e DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00005c          0x4 LONG 0x45de DEFINED (__DMA3Interrupt)?ABSOLUTE (__DMA3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00005e          0x4 LONG 0x713c DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000060          0x4 LONG 0x7166 DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000062          0x4 LONG 0x7190 DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000064          0x4 LONG 0x71ba DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000066          0x4 LONG 0x388 DEFINED (__OC5Interrupt)?ABSOLUTE (__OC5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000068          0x4 LONG 0x388 DEFINED (__OC6Interrupt)?ABSOLUTE (__OC6Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00006a          0x4 LONG 0x388 DEFINED (__OC7Interrupt)?ABSOLUTE (__OC7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00006c          0x4 LONG 0x388 DEFINED (__OC8Interrupt)?ABSOLUTE (__OC8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00006e          0x4 LONG 0x388 DEFINED (__PMPInterrupt)?ABSOLUTE (__PMPInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000070          0x4 LONG 0x4602 DEFINED (__DMA4Interrupt)?ABSOLUTE (__DMA4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000070          0x4 LONG 0x4610 DEFINED (__DMA4Interrupt)?ABSOLUTE (__DMA4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000072          0x4 LONG 0x2f00 DEFINED (__T6Interrupt)?ABSOLUTE (__T6Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000074          0x4 LONG 0x2f26 DEFINED (__T7Interrupt)?ABSOLUTE (__T7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000076          0x4 LONG 0x388 DEFINED (__SI2C2Interrupt)?ABSOLUTE (__SI2C2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000078          0x4 LONG 0x7ff6 DEFINED (__MI2C2Interrupt)?ABSOLUTE (__MI2C2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000078          0x4 LONG 0x8004 DEFINED (__MI2C2Interrupt)?ABSOLUTE (__MI2C2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00007a          0x4 LONG 0x2f5a DEFINED (__T8Interrupt)?ABSOLUTE (__T8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00007c          0x4 LONG 0x2f80 DEFINED (__T9Interrupt)?ABSOLUTE (__T9Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00007e          0x4 LONG 0x388 DEFINED (__INT3Interrupt)?ABSOLUTE (__INT3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000080          0x4 LONG 0x388 DEFINED (__INT4Interrupt)?ABSOLUTE (__INT4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000082          0x4 LONG 0x388 DEFINED (__Interrupt55)?ABSOLUTE (__Interrupt55):ABSOLUTE (__DefaultInterrupt)
                   0x000084          0x4 LONG 0x388 DEFINED (__Interrupt56)?ABSOLUTE (__Interrupt56):ABSOLUTE (__DefaultInterrupt)
-                  0x000086          0x4 LONG 0x6674 DEFINED (__PWMInterrupt)?ABSOLUTE (__PWMInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000088          0x4 LONG 0x5b7c DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000086          0x4 LONG 0x6682 DEFINED (__PWMInterrupt)?ABSOLUTE (__PWMInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000088          0x4 LONG 0x5b8a DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00008a          0x4 LONG 0x388 DEFINED (__DCIErrInterrupt)?ABSOLUTE (__DCIErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00008c          0x4 LONG 0x388 DEFINED (__DCIInterrupt)?ABSOLUTE (__DCIInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00008e          0x4 LONG 0x4634 DEFINED (__DMA5Interrupt)?ABSOLUTE (__DMA5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00008e          0x4 LONG 0x4642 DEFINED (__DMA5Interrupt)?ABSOLUTE (__DMA5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000090          0x4 LONG 0x388 DEFINED (__RTCCInterrupt)?ABSOLUTE (__RTCCInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000092          0x4 LONG 0x388 DEFINED (__FLTAInterrupt)?ABSOLUTE (__FLTAInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000094          0x4 LONG 0x388 DEFINED (__FLTBInterrupt)?ABSOLUTE (__FLTBInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000096          0x4 LONG 0x388 DEFINED (__U1ErrInterrupt)?ABSOLUTE (__U1ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000098          0x4 LONG 0x388 DEFINED (__U2ErrInterrupt)?ABSOLUTE (__U2ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00009a          0x4 LONG 0x388 DEFINED (__CRCInterrupt)?ABSOLUTE (__CRCInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00009c          0x4 LONG 0x4666 DEFINED (__DMA6Interrupt)?ABSOLUTE (__DMA6Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00009e          0x4 LONG 0x4698 DEFINED (__DMA7Interrupt)?ABSOLUTE (__DMA7Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00009c          0x4 LONG 0x4674 DEFINED (__DMA6Interrupt)?ABSOLUTE (__DMA6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00009e          0x4 LONG 0x46a6 DEFINED (__DMA7Interrupt)?ABSOLUTE (__DMA7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000a0          0x4 LONG 0x388 DEFINED (__C1TxReqInterrupt)?ABSOLUTE (__C1TxReqInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0000a2          0x4 LONG 0x388 DEFINED (__Interrupt71)?ABSOLUTE (__Interrupt71):ABSOLUTE (__DefaultInterrupt)
                   0x0000a4          0x4 LONG 0x388 DEFINED (__Interrupt72)?ABSOLUTE (__Interrupt72):ABSOLUTE (__DefaultInterrupt)
@@ -1446,11 +1446,11 @@ __FUID3           0xf80016          0x2
                   0x000110          0x4 LONG 0x388 DEFINED (__AltReservedTrap6)?ABSOLUTE (__AltReservedTrap6):DEFINED (__ReservedTrap6)?ABSOLUTE (__ReservedTrap6):ABSOLUTE (__DefaultInterrupt)
                   0x000112          0x4 LONG 0x388 DEFINED (__AltReservedTrap7)?ABSOLUTE (__AltReservedTrap7):DEFINED (__ReservedTrap7)?ABSOLUTE (__ReservedTrap7):ABSOLUTE (__DefaultInterrupt)
                   0x000114          0x4 LONG 0x388 DEFINED (__AltINT0Interrupt)?ABSOLUTE (__AltINT0Interrupt):DEFINED (__INT0Interrupt)?ABSOLUTE (__INT0Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000116          0x4 LONG 0x70da DEFINED (__AltIC1Interrupt)?ABSOLUTE (__AltIC1Interrupt):DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000116          0x4 LONG 0x70e8 DEFINED (__AltIC1Interrupt)?ABSOLUTE (__AltIC1Interrupt):DEFINED (__IC1Interrupt)?ABSOLUTE (__IC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000118          0x4 LONG 0x388 DEFINED (__AltOC1Interrupt)?ABSOLUTE (__AltOC1Interrupt):DEFINED (__OC1Interrupt)?ABSOLUTE (__OC1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00011a          0x4 LONG 0x2e26 DEFINED (__AltT1Interrupt)?ABSOLUTE (__AltT1Interrupt):DEFINED (__T1Interrupt)?ABSOLUTE (__T1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00011c          0x4 LONG 0x453a DEFINED (__AltDMA0Interrupt)?ABSOLUTE (__AltDMA0Interrupt):DEFINED (__DMA0Interrupt)?ABSOLUTE (__DMA0Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00011e          0x4 LONG 0x7104 DEFINED (__AltIC2Interrupt)?ABSOLUTE (__AltIC2Interrupt):DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00011c          0x4 LONG 0x4548 DEFINED (__AltDMA0Interrupt)?ABSOLUTE (__AltDMA0Interrupt):DEFINED (__DMA0Interrupt)?ABSOLUTE (__DMA0Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00011e          0x4 LONG 0x7112 DEFINED (__AltIC2Interrupt)?ABSOLUTE (__AltIC2Interrupt):DEFINED (__IC2Interrupt)?ABSOLUTE (__IC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000120          0x4 LONG 0x388 DEFINED (__AltOC2Interrupt)?ABSOLUTE (__AltOC2Interrupt):DEFINED (__OC2Interrupt)?ABSOLUTE (__OC2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000122          0x4 LONG 0x2e4c DEFINED (__AltT2Interrupt)?ABSOLUTE (__AltT2Interrupt):DEFINED (__T2Interrupt)?ABSOLUTE (__T2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000124          0x4 LONG 0x2e72 DEFINED (__AltT3Interrupt)?ABSOLUTE (__AltT3Interrupt):DEFINED (__T3Interrupt)?ABSOLUTE (__T3Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1458,18 +1458,18 @@ __FUID3           0xf80016          0x2
                   0x000128          0x4 LONG 0x388 DEFINED (__AltSPI1Interrupt)?ABSOLUTE (__AltSPI1Interrupt):DEFINED (__SPI1Interrupt)?ABSOLUTE (__SPI1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012a          0x4 LONG 0x388 DEFINED (__AltU1RXInterrupt)?ABSOLUTE (__AltU1RXInterrupt):DEFINED (__U1RXInterrupt)?ABSOLUTE (__U1RXInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00012c          0x4 LONG 0x388 DEFINED (__AltU1TXInterrupt)?ABSOLUTE (__AltU1TXInterrupt):DEFINED (__U1TXInterrupt)?ABSOLUTE (__U1TXInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00012e          0x4 LONG 0x6144 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000130          0x4 LONG 0x456c DEFINED (__AltDMA1Interrupt)?ABSOLUTE (__AltDMA1Interrupt):DEFINED (__DMA1Interrupt)?ABSOLUTE (__DMA1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00012e          0x4 LONG 0x6152 DEFINED (__AltADC1Interrupt)?ABSOLUTE (__AltADC1Interrupt):DEFINED (__ADC1Interrupt)?ABSOLUTE (__ADC1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000130          0x4 LONG 0x457a DEFINED (__AltDMA1Interrupt)?ABSOLUTE (__AltDMA1Interrupt):DEFINED (__DMA1Interrupt)?ABSOLUTE (__DMA1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000132          0x4 LONG 0x388 DEFINED (__AltInterrupt15)?ABSOLUTE (__AltInterrupt15):DEFINED (__Interrupt15)?ABSOLUTE (__Interrupt15):ABSOLUTE (__DefaultInterrupt)
                   0x000134          0x4 LONG 0x388 DEFINED (__AltSI2C1Interrupt)?ABSOLUTE (__AltSI2C1Interrupt):DEFINED (__SI2C1Interrupt)?ABSOLUTE (__SI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000136          0x4 LONG 0x7f62 DEFINED (__AltMI2C1Interrupt)?ABSOLUTE (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000136          0x4 LONG 0x7f70 DEFINED (__AltMI2C1Interrupt)?ABSOLUTE (__AltMI2C1Interrupt):DEFINED (__MI2C1Interrupt)?ABSOLUTE (__MI2C1Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000138          0x4 LONG 0x388 DEFINED (__AltCMPInterrupt)?ABSOLUTE (__AltCMPInterrupt):DEFINED (__CMPInterrupt)?ABSOLUTE (__CMPInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013a          0x4 LONG 0x388 DEFINED (__AltCNInterrupt)?ABSOLUTE (__AltCNInterrupt):DEFINED (__CNInterrupt)?ABSOLUTE (__CNInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00013c          0x4 LONG 0x388 DEFINED (__AltINT1Interrupt)?ABSOLUTE (__AltINT1Interrupt):DEFINED (__INT1Interrupt)?ABSOLUTE (__INT1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00013e          0x4 LONG 0x616e DEFINED (__AltADC2Interrupt)?ABSOLUTE (__AltADC2Interrupt):DEFINED (__ADC2Interrupt)?ABSOLUTE (__ADC2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000140          0x4 LONG 0x71d6 DEFINED (__AltIC7Interrupt)?ABSOLUTE (__AltIC7Interrupt):DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000142          0x4 LONG 0x7200 DEFINED (__AltIC8Interrupt)?ABSOLUTE (__AltIC8Interrupt):DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000144          0x4 LONG 0x459e DEFINED (__AltDMA2Interrupt)?ABSOLUTE (__AltDMA2Interrupt):DEFINED (__DMA2Interrupt)?ABSOLUTE (__DMA2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00013e          0x4 LONG 0x617c DEFINED (__AltADC2Interrupt)?ABSOLUTE (__AltADC2Interrupt):DEFINED (__ADC2Interrupt)?ABSOLUTE (__ADC2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000140          0x4 LONG 0x71e4 DEFINED (__AltIC7Interrupt)?ABSOLUTE (__AltIC7Interrupt):DEFINED (__IC7Interrupt)?ABSOLUTE (__IC7Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000142          0x4 LONG 0x720e DEFINED (__AltIC8Interrupt)?ABSOLUTE (__AltIC8Interrupt):DEFINED (__IC8Interrupt)?ABSOLUTE (__IC8Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000144          0x4 LONG 0x45ac DEFINED (__AltDMA2Interrupt)?ABSOLUTE (__AltDMA2Interrupt):DEFINED (__DMA2Interrupt)?ABSOLUTE (__DMA2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000146          0x4 LONG 0x388 DEFINED (__AltOC3Interrupt)?ABSOLUTE (__AltOC3Interrupt):DEFINED (__OC3Interrupt)?ABSOLUTE (__OC3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000148          0x4 LONG 0x388 DEFINED (__AltOC4Interrupt)?ABSOLUTE (__AltOC4Interrupt):DEFINED (__OC4Interrupt)?ABSOLUTE (__OC4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00014a          0x4 LONG 0x2ea6 DEFINED (__AltT4Interrupt)?ABSOLUTE (__AltT4Interrupt):DEFINED (__T4Interrupt)?ABSOLUTE (__T4Interrupt):ABSOLUTE (__DefaultInterrupt)
@@ -1480,41 +1480,41 @@ __FUID3           0xf80016          0x2
                   0x000154          0x4 LONG 0x388 DEFINED (__AltSPI2ErrInterrupt)?ABSOLUTE (__AltSPI2ErrInterrupt):DEFINED (__SPI2ErrInterrupt)?ABSOLUTE (__SPI2ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000156          0x4 LONG 0x388 DEFINED (__AltSPI2Interrupt)?ABSOLUTE (__AltSPI2Interrupt):DEFINED (__SPI2Interrupt)?ABSOLUTE (__SPI2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000158          0x4 LONG 0x388 DEFINED (__AltC1RxRdyInterrupt)?ABSOLUTE (__AltC1RxRdyInterrupt):DEFINED (__C1RxRdyInterrupt)?ABSOLUTE (__C1RxRdyInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00015a          0x4 LONG 0x7890 DEFINED (__AltC1Interrupt)?ABSOLUTE (__AltC1Interrupt):DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00015c          0x4 LONG 0x45d0 DEFINED (__AltDMA3Interrupt)?ABSOLUTE (__AltDMA3Interrupt):DEFINED (__DMA3Interrupt)?ABSOLUTE (__DMA3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00015e          0x4 LONG 0x712e DEFINED (__AltIC3Interrupt)?ABSOLUTE (__AltIC3Interrupt):DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000160          0x4 LONG 0x7158 DEFINED (__AltIC4Interrupt)?ABSOLUTE (__AltIC4Interrupt):DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000162          0x4 LONG 0x7182 DEFINED (__AltIC5Interrupt)?ABSOLUTE (__AltIC5Interrupt):DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000164          0x4 LONG 0x71ac DEFINED (__AltIC6Interrupt)?ABSOLUTE (__AltIC6Interrupt):DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00015a          0x4 LONG 0x789e DEFINED (__AltC1Interrupt)?ABSOLUTE (__AltC1Interrupt):DEFINED (__C1Interrupt)?ABSOLUTE (__C1Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00015c          0x4 LONG 0x45de DEFINED (__AltDMA3Interrupt)?ABSOLUTE (__AltDMA3Interrupt):DEFINED (__DMA3Interrupt)?ABSOLUTE (__DMA3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00015e          0x4 LONG 0x713c DEFINED (__AltIC3Interrupt)?ABSOLUTE (__AltIC3Interrupt):DEFINED (__IC3Interrupt)?ABSOLUTE (__IC3Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000160          0x4 LONG 0x7166 DEFINED (__AltIC4Interrupt)?ABSOLUTE (__AltIC4Interrupt):DEFINED (__IC4Interrupt)?ABSOLUTE (__IC4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000162          0x4 LONG 0x7190 DEFINED (__AltIC5Interrupt)?ABSOLUTE (__AltIC5Interrupt):DEFINED (__IC5Interrupt)?ABSOLUTE (__IC5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000164          0x4 LONG 0x71ba DEFINED (__AltIC6Interrupt)?ABSOLUTE (__AltIC6Interrupt):DEFINED (__IC6Interrupt)?ABSOLUTE (__IC6Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000166          0x4 LONG 0x388 DEFINED (__AltOC5Interrupt)?ABSOLUTE (__AltOC5Interrupt):DEFINED (__OC5Interrupt)?ABSOLUTE (__OC5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000168          0x4 LONG 0x388 DEFINED (__AltOC6Interrupt)?ABSOLUTE (__AltOC6Interrupt):DEFINED (__OC6Interrupt)?ABSOLUTE (__OC6Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00016a          0x4 LONG 0x388 DEFINED (__AltOC7Interrupt)?ABSOLUTE (__AltOC7Interrupt):DEFINED (__OC7Interrupt)?ABSOLUTE (__OC7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00016c          0x4 LONG 0x388 DEFINED (__AltOC8Interrupt)?ABSOLUTE (__AltOC8Interrupt):DEFINED (__OC8Interrupt)?ABSOLUTE (__OC8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00016e          0x4 LONG 0x388 DEFINED (__AltPMPInterrupt)?ABSOLUTE (__AltPMPInterrupt):DEFINED (__PMPInterrupt)?ABSOLUTE (__PMPInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000170          0x4 LONG 0x4602 DEFINED (__AltDMA4Interrupt)?ABSOLUTE (__AltDMA4Interrupt):DEFINED (__DMA4Interrupt)?ABSOLUTE (__DMA4Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000170          0x4 LONG 0x4610 DEFINED (__AltDMA4Interrupt)?ABSOLUTE (__AltDMA4Interrupt):DEFINED (__DMA4Interrupt)?ABSOLUTE (__DMA4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000172          0x4 LONG 0x2f00 DEFINED (__AltT6Interrupt)?ABSOLUTE (__AltT6Interrupt):DEFINED (__T6Interrupt)?ABSOLUTE (__T6Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000174          0x4 LONG 0x2f26 DEFINED (__AltT7Interrupt)?ABSOLUTE (__AltT7Interrupt):DEFINED (__T7Interrupt)?ABSOLUTE (__T7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000176          0x4 LONG 0x388 DEFINED (__AltSI2C2Interrupt)?ABSOLUTE (__AltSI2C2Interrupt):DEFINED (__SI2C2Interrupt)?ABSOLUTE (__SI2C2Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000178          0x4 LONG 0x7ff6 DEFINED (__AltMI2C2Interrupt)?ABSOLUTE (__AltMI2C2Interrupt):DEFINED (__MI2C2Interrupt)?ABSOLUTE (__MI2C2Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000178          0x4 LONG 0x8004 DEFINED (__AltMI2C2Interrupt)?ABSOLUTE (__AltMI2C2Interrupt):DEFINED (__MI2C2Interrupt)?ABSOLUTE (__MI2C2Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00017a          0x4 LONG 0x2f5a DEFINED (__AltT8Interrupt)?ABSOLUTE (__AltT8Interrupt):DEFINED (__T8Interrupt)?ABSOLUTE (__T8Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00017c          0x4 LONG 0x2f80 DEFINED (__AltT9Interrupt)?ABSOLUTE (__AltT9Interrupt):DEFINED (__T9Interrupt)?ABSOLUTE (__T9Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00017e          0x4 LONG 0x388 DEFINED (__AltINT3Interrupt)?ABSOLUTE (__AltINT3Interrupt):DEFINED (__INT3Interrupt)?ABSOLUTE (__INT3Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000180          0x4 LONG 0x388 DEFINED (__AltINT4Interrupt)?ABSOLUTE (__AltINT4Interrupt):DEFINED (__INT4Interrupt)?ABSOLUTE (__INT4Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000182          0x4 LONG 0x388 DEFINED (__AltInterrupt55)?ABSOLUTE (__AltInterrupt55):DEFINED (__Interrupt55)?ABSOLUTE (__Interrupt55):ABSOLUTE (__DefaultInterrupt)
                   0x000184          0x4 LONG 0x388 DEFINED (__AltInterrupt56)?ABSOLUTE (__AltInterrupt56):DEFINED (__Interrupt56)?ABSOLUTE (__Interrupt56):ABSOLUTE (__DefaultInterrupt)
-                  0x000186          0x4 LONG 0x6674 DEFINED (__AltPWMInterrupt)?ABSOLUTE (__AltPWMInterrupt):DEFINED (__PWMInterrupt)?ABSOLUTE (__PWMInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x000188          0x4 LONG 0x5b7c DEFINED (__AltQEIInterrupt)?ABSOLUTE (__AltQEIInterrupt):DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000186          0x4 LONG 0x6682 DEFINED (__AltPWMInterrupt)?ABSOLUTE (__AltPWMInterrupt):DEFINED (__PWMInterrupt)?ABSOLUTE (__PWMInterrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x000188          0x4 LONG 0x5b8a DEFINED (__AltQEIInterrupt)?ABSOLUTE (__AltQEIInterrupt):DEFINED (__QEIInterrupt)?ABSOLUTE (__QEIInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00018a          0x4 LONG 0x388 DEFINED (__AltDCIErrInterrupt)?ABSOLUTE (__AltDCIErrInterrupt):DEFINED (__DCIErrInterrupt)?ABSOLUTE (__DCIErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00018c          0x4 LONG 0x388 DEFINED (__AltDCIInterrupt)?ABSOLUTE (__AltDCIInterrupt):DEFINED (__DCIInterrupt)?ABSOLUTE (__DCIInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00018e          0x4 LONG 0x4634 DEFINED (__AltDMA5Interrupt)?ABSOLUTE (__AltDMA5Interrupt):DEFINED (__DMA5Interrupt)?ABSOLUTE (__DMA5Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00018e          0x4 LONG 0x4642 DEFINED (__AltDMA5Interrupt)?ABSOLUTE (__AltDMA5Interrupt):DEFINED (__DMA5Interrupt)?ABSOLUTE (__DMA5Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000190          0x4 LONG 0x388 DEFINED (__AltRTCCInterrupt)?ABSOLUTE (__AltRTCCInterrupt):DEFINED (__RTCCInterrupt)?ABSOLUTE (__RTCCInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000192          0x4 LONG 0x388 DEFINED (__AltFLTAInterrupt)?ABSOLUTE (__AltFLTAInterrupt):DEFINED (__FLTAInterrupt)?ABSOLUTE (__FLTAInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000194          0x4 LONG 0x388 DEFINED (__AltFLTBInterrupt)?ABSOLUTE (__AltFLTBInterrupt):DEFINED (__FLTBInterrupt)?ABSOLUTE (__FLTBInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000196          0x4 LONG 0x388 DEFINED (__AltU1ErrInterrupt)?ABSOLUTE (__AltU1ErrInterrupt):DEFINED (__U1ErrInterrupt)?ABSOLUTE (__U1ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x000198          0x4 LONG 0x388 DEFINED (__AltU2ErrInterrupt)?ABSOLUTE (__AltU2ErrInterrupt):DEFINED (__U2ErrInterrupt)?ABSOLUTE (__U2ErrInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x00019a          0x4 LONG 0x388 DEFINED (__AltCRCInterrupt)?ABSOLUTE (__AltCRCInterrupt):DEFINED (__CRCInterrupt)?ABSOLUTE (__CRCInterrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00019c          0x4 LONG 0x4666 DEFINED (__AltDMA6Interrupt)?ABSOLUTE (__AltDMA6Interrupt):DEFINED (__DMA6Interrupt)?ABSOLUTE (__DMA6Interrupt):ABSOLUTE (__DefaultInterrupt)
-                  0x00019e          0x4 LONG 0x4698 DEFINED (__AltDMA7Interrupt)?ABSOLUTE (__AltDMA7Interrupt):DEFINED (__DMA7Interrupt)?ABSOLUTE (__DMA7Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00019c          0x4 LONG 0x4674 DEFINED (__AltDMA6Interrupt)?ABSOLUTE (__AltDMA6Interrupt):DEFINED (__DMA6Interrupt)?ABSOLUTE (__DMA6Interrupt):ABSOLUTE (__DefaultInterrupt)
+                  0x00019e          0x4 LONG 0x46a6 DEFINED (__AltDMA7Interrupt)?ABSOLUTE (__AltDMA7Interrupt):DEFINED (__DMA7Interrupt)?ABSOLUTE (__DMA7Interrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001a0          0x4 LONG 0x388 DEFINED (__AltC1TxReqInterrupt)?ABSOLUTE (__AltC1TxReqInterrupt):DEFINED (__C1TxReqInterrupt)?ABSOLUTE (__C1TxReqInterrupt):ABSOLUTE (__DefaultInterrupt)
                   0x0001a2          0x4 LONG 0x388 DEFINED (__AltInterrupt71)?ABSOLUTE (__AltInterrupt71):DEFINED (__Interrupt71)?ABSOLUTE (__Interrupt71):ABSOLUTE (__DefaultInterrupt)
                   0x0001a4          0x4 LONG 0x388 DEFINED (__AltInterrupt72)?ABSOLUTE (__AltInterrupt72):DEFINED (__Interrupt72)?ABSOLUTE (__Interrupt72):ABSOLUTE (__DefaultInterrupt)
@@ -2785,14 +2785,14 @@ __c30_signature
  __c30_signature
                   0x00239c          0x6 c:/program files (x86)/microchip/xc16/v1.21/bin/bin/../../lib\libc-elf.a(strncat.eo)
 
-_0367D5A055edb5a5
+_036725A055edeca7
                     0x4400        0x200
- _0367D5A055edb5a5
+ _036725A055edeca7
                     0x4400        0x200 build/default/production/_ext/1193877530/can.o
 
-_036D5D8055edb5ad
+_037D9D8055edee7c
                     0x4600         0x20
- _036D5D8055edb5ad
+ _037D9D8055edee7c
                     0x4600         0x20 build/default/production/_ext/1472/main.o
 
 .nbss               0x0800        0x968
@@ -2807,9 +2807,9 @@ _036D5D8055edb5ad
                     0x1168                  _events_flags
                     0x116a                  _vmState
 
-_036C596055edb5a5
+_036CB96055edeca7
                     0x120c         0x72
- _036C596055edb5a5
+ _036CB96055edeca7
                     0x120c         0x72 build/default/production/_ext/713563870/skel.o
                     0x120c                  _settings
 
@@ -2934,7 +2934,7 @@ _036C596055edb5a5
  .const             0xa124         0x30 build/default/production/_ext/1193864356/pwm.o
  .const             0xa154         0x2e build/default/production/_ext/2039697988/ic.o
 
-.text             0x002182       0x665a
+.text             0x002182       0x6668
  .text            0x002182        0xe32 build/default/production/_ext/544097829/timer.o
                   0x00234c                  _timer_id_to_index
                   0x002356                  _timer_id_to_32bits
@@ -2964,7 +2964,7 @@ _036C596055edb5a5
                   0x002f26                  __T7Interrupt
                   0x002f5a                  __T8Interrupt
                   0x002f80                  __T9Interrupt
- .text            0x002fb4        0xdcc build/default/production/_ext/1472/main.o
+ .text            0x002fb4        0xdda build/default/production/_ext/1472/main.o
                   0x002ffa                  _m0_update_cb
                   0x00300a                  _m0_overcurrent_cb
                   0x003052                  _m1_update_cb
@@ -2981,252 +2981,252 @@ _036C596055edb5a5
                   0x003310                  _hall_dig_enc_init_16
                   0x003328                  _IIR_mov_avg
                   0x003354                  _get_rot_speed
-                  0x003384                  _timer_cb
-                  0x0033f4                  _AsebaNative__system_tunning_osctun
-                  0x00346c                  _AsebaNative_lis331_set_mode
-                  0x0034ec                  _AsebaNative_motor_set_break_mode
-                  0x003522                  _AsebaNative_battery_update_temperature
-                  0x00354c                  _AsebaNative_battery_update_voltage
-                  0x003576                  _update_aseba_variables_read
-                  0x003644                  _update_aseba_variables_write
-                  0x0039f0                  _main
- .text            0x003d80        0x94a build/default/production/_ext/1193876210/dma.o
-                  0x003daa                  _dma_init_channel
-                  0x0042e8                  _dma_enable_channel
-                  0x00438c                  _dma_disable_channel
-                  0x004440                  _dma_start_transfer
-                  0x00448c                  _dma_set_priority
-                  0x00453a                  __DMA0Interrupt
-                  0x00456c                  __DMA1Interrupt
-                  0x00459e                  __DMA2Interrupt
-                  0x0045d0                  __DMA3Interrupt
-                  0x004602                  __DMA4Interrupt
-                  0x004634                  __DMA5Interrupt
-                  0x004666                  __DMA6Interrupt
-                  0x004698                  __DMA7Interrupt
- .text            0x0046ca        0x916 build/default/production/_ext/1140433100/natives.o
-                  0x0046da                  _aseba_atan2
-                  0x0047a0                  _aseba_sin
-                  0x004802                  _aseba_cos
-                  0x004808                  _aseba_sqrt
-                  0x00482c                  _aseba_comb_sort
-                  0x00487a                  _AsebaNative_veccopy
-                  0x0048ac                  _AsebaNative_vecfill
-                  0x0048dc                  _AsebaNative_vecaddscalar
-                  0x00491c                  _AsebaNative_vecadd
-                  0x004964                  _AsebaNative_vecsub
-                  0x0049ac                  _AsebaNative_vecmul
-                  0x0049f2                  _AsebaNative_vecdiv
-                  0x004a66                  _AsebaNative_vecmin
-                  0x004ab2                  _AsebaNative_vecmax
-                  0x004afe                  _AsebaNative_vecclamp
-                  0x004b5e                  _AsebaNative_vecdot
-                  0x004bd8                  _AsebaNative_vecstat
-                  0x004c50                  _AsebaNative_vecargbounds
-                  0x004ca4                  _AsebaNative_vecsort
-                  0x004cc0                  _AsebaNative_mathmuldiv
-                  0x004d48                  _AsebaNative_mathatan2
-                  0x004da0                  _AsebaNative_mathsin
-                  0x004ddc                  _AsebaNative_mathcos
-                  0x004e18                  _AsebaNative_mathrot2
-                  0x004e7c                  _AsebaNative_mathsqrt
-                  0x004eb8                  _AsebaNative_vecnonzerosequence
-                  0x004f9c                  _AsebaSetRandomSeed
-                  0x004fa0                  _AsebaGetRandom
-                  0x004fae                  _AsebaNative_rand
- .text            0x004fe0        0x616 build/default/production/_ext/1140433100/vm.o
-                  0x0050d6                  _AsebaVMInit
-                  0x0050ea                  _AsebaVMGetEventAddress
-                  0x00510a                  _AsebaVMStep
-                  0x005304                  _AsebaVMEmitNodeSpecificError
-                  0x005356                  _AsebaVMCheckBreakpoint
-                  0x005378                  _AsebaDebugBareRun
-                  0x0053b2                  _AsebaVMSetBreakpoint
-                  0x0053ca                  _AsebaVMClearBreakpoint
-                  0x0053fc                  _AsebaVMClearBreakpoints
-                  0x005402                  _AsebaVMSendExecutionStateChanged
-                  0x005418                  _AsebaDebugBreakpointRun
-                  0x00546e                  _AsebaVMRun
-                  0x00548e                  _AsebaVMSetupEvent
-                  0x0054c6                  _AsebaVMDebugMessage
-                  0x0055c6                  _AsebaVMShouldDropPacket
- .text            0x0055f6        0x5d4 build/default/production/_ext/814541362/encoder.o
-                  0x0055f6                  build/default/production/_ext/814541362/encoder.o:_tmr_cb
-                  0x00568c                  build/default/production/_ext/814541362/encoder.o:_tmr2_3_cb
-                  0x0056d2                  build/default/production/_ext/814541362/encoder.o:_ic_cb
-                  0x005750                  build/default/production/_ext/814541362/encoder.o:_ic_tmr3_cb
-                  0x0057d8                  build/default/production/_ext/814541362/encoder.o:_ic_tmr2_cb
-                  0x005892                  _encoder_init
-                  0x0059f4                  _encoder_get_position
-                  0x005a7e                  _encoder_step
-                  0x005ac4                  _encoder_reset
-                  0x005b7c                  __QEIInterrupt
- .text            0x005bca        0x5ce build/default/production/_ext/1193879370/adc.o
-                  0x005bca                  _adc1_enable
-                  0x005bd0                  _adc1_disable
-                  0x005bd4                  _adc1_init_simple
-                  0x005c6a                  _adc1_start_simple_conversion
-                  0x005c8c                  _amount_of_bits_at_one
-                  0x005ca4                  _log_2
-                  0x005d04                  _adc1_init_scan_dma
-                  0x005ece                  _adc2_enable
-                  0x005ed4                  _adc2_disable
-                  0x005ed8                  _adc2_init_simple
-                  0x005f6a                  _adc2_start_simple_conversion
-                  0x005f8c                  _adc2_init_scan_dma
-                  0x006144                  __ADC1Interrupt
-                  0x00616e                  __ADC2Interrupt
- .text            0x006198        0x500 build/default/production/_ext/1193864356/pwm.o
-                  0x006198                  _pwm_init
-                  0x006206                  _pwm_enable_interrupt
-                  0x006250                  _pwm_disable_interrupt
-                  0x006256                  _pwm_disable
-                  0x006298                  _pwm_set_duty
-                  0x0065aa                  _pwm_set_special_event_trigger
-                  0x006604                  _pwm_set_brake
-                  0x00665a                  _pwm_invert
-                  0x006674                  __PWMInterrupt
- .text            0x006698        0x3f2 build/default/production/_ext/713563870/skel.o
-                  0x0066a8                  _AsebaResetIntoBootloader
-                  0x0066ac                  build/default/production/_ext/713563870/skel.o:_received_packet_dropped
-                  0x0066ae                  build/default/production/_ext/713563870/skel.o:_sent_packet_dropped
-                  0x006726                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_write
-                  0x006756                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_read
-                  0x006786                  build/default/production/_ext/713563870/skel.o:_error_handler
-                  0x0067ee                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_flash
-                  0x0068b4                  _AsebaPutVmToSleep
-                  0x0068b8                  _AsebaGetLocalEventsDescriptions
-                  0x0068bc                  _AsebaIdle
-                  0x0068c0                  _AsebaNativeFunction
-                  0x0068c8                  _AsebaGetVMDescription
-                  0x0068cc                  _AsebaShouldDropPacket
-                  0x0068d4                  _AsebaGetNativeFunctionsDescriptions
-                  0x0068d8                  _AsebaWriteBytecode
-                  0x0069a6                  _load_settings_from_flash
-                  0x0069f2                  _init_aseba_and_can
-                  0x006a38                  _run_aseba_main_loop
- .text            0x006a8a        0x3ec build/default/production/_ext/822778818/motor-csp.o
-                  0x006a8a                  _div32by16u
-                  0x006abc                  _div32by16s
-                  0x006ae6                  _motor_csp_step
-                  0x006e62                  _motor_csp_init_32
-                  0x006e6e                  _motor_csp_init_16
- .text            0x006e76        0x3b4 build/default/production/_ext/2039697988/ic.o
-                  0x006e76                  _ic_enable
-                  0x00707e                  _ic_disable
-                  0x0070da                  __IC1Interrupt
-                  0x007104                  __IC2Interrupt
-                  0x00712e                  __IC3Interrupt
-                  0x007158                  __IC4Interrupt
-                  0x007182                  __IC5Interrupt
-                  0x0071ac                  __IC6Interrupt
-                  0x0071d6                  __IC7Interrupt
-                  0x007200                  __IC8Interrupt
- .text            0x00722a        0x380 build/default/production/_ext/1838315699/can-net.o
-                  0x007336                  _AsebaCanGetMinMultipleOfHeight
-                  0x007342                  _AsebaCanInit
-                  0x007368                  _AsebaCanSendSpecificSource
-                  0x0073d0                  _AsebaCanSend
-                  0x0073d4                  _AsebaCanRecvBufferEmpty
-                  0x0073e4                  _AsebaCanFrameSent
-                  0x0073ee                  _AsebaCanFlushQueue
-                  0x007404                  _AsebaCanRecv
-                  0x0074da                  _AsebaCanFrameReceived
-                  0x007582                  _AsebaCanRecvFreeQueue
- .text            0x0075aa        0x322 build/default/production/_ext/1193877530/can.o
-                  0x00778a                  _can_init
-                  0x007848                  _can_send_frame
-                  0x00787e                  _can_disable
-                  0x007882                  _can_enable
-                  0x007886                  _can_is_frame_room
-                  0x007890                  __C1Interrupt
- .text            0x0078cc        0x306 build/default/production/_ext/556948858/flash.o
-                  0x007972                  _flash_read_instr
-                  0x00798e                  _flash_read_low
-                  0x0079a6                  _flash_read_high
-                  0x0079be                  _flash_read_chunk
-                  0x007a18                  _flash_erase_page
-                  0x007a52                  _flash_flash_instr
-                  0x007a92                  _flash_prepare_write
-                  0x007ac6                  ___fixup_errata
-                  0x007af6                  _flash_write_instruction
-                  0x007b42                  _flash_write_buffer
-                  0x007bbe                  _flash_complete_write
- .text            0x007bd2        0x26e build/default/production/_ext/2027221979/ds2777.o
-                  0x007bd2                  _ds2777_read_8
-                  0x007c28                  _ds2777_read_16
-                  0x007c46                  _ds2777_write_8
-                  0x007c60                  _ds2777_write_16
-                  0x007c7e                  _ds2777_read_romid
-                  0x007cc0                  _ds2777_read_current
-                  0x007d38                  _ds2777_read_voltage
-                  0x007d64                  _ds2777_read_global_voltage
-                  0x007d88                  _ds2777_read_temperature
-                  0x007d96                  _ds2777_read_acc
-                  0x007da2                  _ds2777_set_acc
-                  0x007db2                  _ds2777_init_battery
-                  0x007e12                  _ds2777_set_pack_status
-                  0x007e26                  _ds2777_init
- .text            0x007e40        0x24a build/default/production/_ext/1193873232/master.o
-                  0x007e40                  _i2c_init_master
-                  0x007ee2                  _i2c_master_start_operations
-                  0x007f20                  _i2c_master_is_busy
-                  0x007f44                  _i2c_master_reset
-                  0x007f62                  __MI2C1Interrupt
-                  0x007ff6                  __MI2C2Interrupt
- .text            0x00808a        0x244 build/default/production/_ext/1193873232/master_protocol.o
-                  0x00808a                  build/default/production/_ext/1193873232/master_protocol.o:_i2c_master_transfert_op
-                  0x0081ea                  _i2c_master_transfert_async
-                  0x008244                  _i2c_master_transfert_block
-                  0x008264                  _i2c_read
-                  0x008276                  _i2c_write
- .text            0x0082ce        0x218 build/default/production/_ext/145293405/vm-buffer.o
-                  0x008328                  _AsebaSendMessage
-                  0x008354                  _AsebaSendVariables
-                  0x008388                  _AsebaSendDescription
-                  0x008488                  _AsebaProcessIncomingEvents
- .text            0x0084e6        0x1a0 build/default/production/_ext/1644635769/gpio.o
-                  0x0084e6                  _gpio_set_opendrain
-                  0x00852e                  _gpio_set_dir
-                  0x008560                  _gpio_write
-                  0x008594                  _gpio_read
-                  0x0085b0                  _gpio_write_word
-                  0x0085b8                  _gpio_read_word
-                  0x0085c0                  _gpio_set_dir_word
-                  0x0085e8                  _gpio_set_opendrain_word
-                  0x008606                  _gpio_write_byte
-                  0x008618                  _gpio_read_byte
-                  0x00862c                  _gpio_set_dir_byte
-                  0x00865c                  _gpio_set_opendrain_byte
- .text            0x008686        0x156 build/default/production/_ext/2027221979/lis331.o
-                  0x008686                  build/default/production/_ext/2027221979/lis331.o:_lis331_i2c_cb
-                  0x0086ce                  build/default/production/_ext/2027221979/lis331.o:_lis331_tmr
-                  0x0086e0                  _lis331_init
-                  0x008732                  _lis331_set_mode
+                  0x003392                  _timer_cb
+                  0x003402                  _AsebaNative__system_tunning_osctun
+                  0x00347a                  _AsebaNative_lis331_set_mode
+                  0x0034fa                  _AsebaNative_motor_set_break_mode
+                  0x003530                  _AsebaNative_battery_update_temperature
+                  0x00355a                  _AsebaNative_battery_update_voltage
+                  0x003584                  _update_aseba_variables_read
+                  0x003652                  _update_aseba_variables_write
+                  0x0039fe                  _main
+ .text            0x003d8e        0x94a build/default/production/_ext/1193876210/dma.o
+                  0x003db8                  _dma_init_channel
+                  0x0042f6                  _dma_enable_channel
+                  0x00439a                  _dma_disable_channel
+                  0x00444e                  _dma_start_transfer
+                  0x00449a                  _dma_set_priority
+                  0x004548                  __DMA0Interrupt
+                  0x00457a                  __DMA1Interrupt
+                  0x0045ac                  __DMA2Interrupt
+                  0x0045de                  __DMA3Interrupt
+                  0x004610                  __DMA4Interrupt
+                  0x004642                  __DMA5Interrupt
+                  0x004674                  __DMA6Interrupt
+                  0x0046a6                  __DMA7Interrupt
+ .text            0x0046d8        0x916 build/default/production/_ext/1140433100/natives.o
+                  0x0046e8                  _aseba_atan2
+                  0x0047ae                  _aseba_sin
+                  0x004810                  _aseba_cos
+                  0x004816                  _aseba_sqrt
+                  0x00483a                  _aseba_comb_sort
+                  0x004888                  _AsebaNative_veccopy
+                  0x0048ba                  _AsebaNative_vecfill
+                  0x0048ea                  _AsebaNative_vecaddscalar
+                  0x00492a                  _AsebaNative_vecadd
+                  0x004972                  _AsebaNative_vecsub
+                  0x0049ba                  _AsebaNative_vecmul
+                  0x004a00                  _AsebaNative_vecdiv
+                  0x004a74                  _AsebaNative_vecmin
+                  0x004ac0                  _AsebaNative_vecmax
+                  0x004b0c                  _AsebaNative_vecclamp
+                  0x004b6c                  _AsebaNative_vecdot
+                  0x004be6                  _AsebaNative_vecstat
+                  0x004c5e                  _AsebaNative_vecargbounds
+                  0x004cb2                  _AsebaNative_vecsort
+                  0x004cce                  _AsebaNative_mathmuldiv
+                  0x004d56                  _AsebaNative_mathatan2
+                  0x004dae                  _AsebaNative_mathsin
+                  0x004dea                  _AsebaNative_mathcos
+                  0x004e26                  _AsebaNative_mathrot2
+                  0x004e8a                  _AsebaNative_mathsqrt
+                  0x004ec6                  _AsebaNative_vecnonzerosequence
+                  0x004faa                  _AsebaSetRandomSeed
+                  0x004fae                  _AsebaGetRandom
+                  0x004fbc                  _AsebaNative_rand
+ .text            0x004fee        0x616 build/default/production/_ext/1140433100/vm.o
+                  0x0050e4                  _AsebaVMInit
+                  0x0050f8                  _AsebaVMGetEventAddress
+                  0x005118                  _AsebaVMStep
+                  0x005312                  _AsebaVMEmitNodeSpecificError
+                  0x005364                  _AsebaVMCheckBreakpoint
+                  0x005386                  _AsebaDebugBareRun
+                  0x0053c0                  _AsebaVMSetBreakpoint
+                  0x0053d8                  _AsebaVMClearBreakpoint
+                  0x00540a                  _AsebaVMClearBreakpoints
+                  0x005410                  _AsebaVMSendExecutionStateChanged
+                  0x005426                  _AsebaDebugBreakpointRun
+                  0x00547c                  _AsebaVMRun
+                  0x00549c                  _AsebaVMSetupEvent
+                  0x0054d4                  _AsebaVMDebugMessage
+                  0x0055d4                  _AsebaVMShouldDropPacket
+ .text            0x005604        0x5d4 build/default/production/_ext/814541362/encoder.o
+                  0x005604                  build/default/production/_ext/814541362/encoder.o:_tmr_cb
+                  0x00569a                  build/default/production/_ext/814541362/encoder.o:_tmr2_3_cb
+                  0x0056e0                  build/default/production/_ext/814541362/encoder.o:_ic_cb
+                  0x00575e                  build/default/production/_ext/814541362/encoder.o:_ic_tmr3_cb
+                  0x0057e6                  build/default/production/_ext/814541362/encoder.o:_ic_tmr2_cb
+                  0x0058a0                  _encoder_init
+                  0x005a02                  _encoder_get_position
+                  0x005a8c                  _encoder_step
+                  0x005ad2                  _encoder_reset
+                  0x005b8a                  __QEIInterrupt
+ .text            0x005bd8        0x5ce build/default/production/_ext/1193879370/adc.o
+                  0x005bd8                  _adc1_enable
+                  0x005bde                  _adc1_disable
+                  0x005be2                  _adc1_init_simple
+                  0x005c78                  _adc1_start_simple_conversion
+                  0x005c9a                  _amount_of_bits_at_one
+                  0x005cb2                  _log_2
+                  0x005d12                  _adc1_init_scan_dma
+                  0x005edc                  _adc2_enable
+                  0x005ee2                  _adc2_disable
+                  0x005ee6                  _adc2_init_simple
+                  0x005f78                  _adc2_start_simple_conversion
+                  0x005f9a                  _adc2_init_scan_dma
+                  0x006152                  __ADC1Interrupt
+                  0x00617c                  __ADC2Interrupt
+ .text            0x0061a6        0x500 build/default/production/_ext/1193864356/pwm.o
+                  0x0061a6                  _pwm_init
+                  0x006214                  _pwm_enable_interrupt
+                  0x00625e                  _pwm_disable_interrupt
+                  0x006264                  _pwm_disable
+                  0x0062a6                  _pwm_set_duty
+                  0x0065b8                  _pwm_set_special_event_trigger
+                  0x006612                  _pwm_set_brake
+                  0x006668                  _pwm_invert
+                  0x006682                  __PWMInterrupt
+ .text            0x0066a6        0x3f2 build/default/production/_ext/713563870/skel.o
+                  0x0066b6                  _AsebaResetIntoBootloader
+                  0x0066ba                  build/default/production/_ext/713563870/skel.o:_received_packet_dropped
+                  0x0066bc                  build/default/production/_ext/713563870/skel.o:_sent_packet_dropped
+                  0x006734                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_write
+                  0x006764                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_read
+                  0x006794                  build/default/production/_ext/713563870/skel.o:_error_handler
+                  0x0067fc                  build/default/production/_ext/713563870/skel.o:_AsebaNative__system_settings_flash
+                  0x0068c2                  _AsebaPutVmToSleep
+                  0x0068c6                  _AsebaGetLocalEventsDescriptions
+                  0x0068ca                  _AsebaIdle
+                  0x0068ce                  _AsebaNativeFunction
+                  0x0068d6                  _AsebaGetVMDescription
+                  0x0068da                  _AsebaShouldDropPacket
+                  0x0068e2                  _AsebaGetNativeFunctionsDescriptions
+                  0x0068e6                  _AsebaWriteBytecode
+                  0x0069b4                  _load_settings_from_flash
+                  0x006a00                  _init_aseba_and_can
+                  0x006a46                  _run_aseba_main_loop
+ .text            0x006a98        0x3ec build/default/production/_ext/822778818/motor-csp.o
+                  0x006a98                  _div32by16u
+                  0x006aca                  _div32by16s
+                  0x006af4                  _motor_csp_step
+                  0x006e70                  _motor_csp_init_32
+                  0x006e7c                  _motor_csp_init_16
+ .text            0x006e84        0x3b4 build/default/production/_ext/2039697988/ic.o
+                  0x006e84                  _ic_enable
+                  0x00708c                  _ic_disable
+                  0x0070e8                  __IC1Interrupt
+                  0x007112                  __IC2Interrupt
+                  0x00713c                  __IC3Interrupt
+                  0x007166                  __IC4Interrupt
+                  0x007190                  __IC5Interrupt
+                  0x0071ba                  __IC6Interrupt
+                  0x0071e4                  __IC7Interrupt
+                  0x00720e                  __IC8Interrupt
+ .text            0x007238        0x380 build/default/production/_ext/1838315699/can-net.o
+                  0x007344                  _AsebaCanGetMinMultipleOfHeight
+                  0x007350                  _AsebaCanInit
+                  0x007376                  _AsebaCanSendSpecificSource
+                  0x0073de                  _AsebaCanSend
+                  0x0073e2                  _AsebaCanRecvBufferEmpty
+                  0x0073f2                  _AsebaCanFrameSent
+                  0x0073fc                  _AsebaCanFlushQueue
+                  0x007412                  _AsebaCanRecv
+                  0x0074e8                  _AsebaCanFrameReceived
+                  0x007590                  _AsebaCanRecvFreeQueue
+ .text            0x0075b8        0x322 build/default/production/_ext/1193877530/can.o
+                  0x007798                  _can_init
+                  0x007856                  _can_send_frame
+                  0x00788c                  _can_disable
+                  0x007890                  _can_enable
+                  0x007894                  _can_is_frame_room
+                  0x00789e                  __C1Interrupt
+ .text            0x0078da        0x306 build/default/production/_ext/556948858/flash.o
+                  0x007980                  _flash_read_instr
+                  0x00799c                  _flash_read_low
+                  0x0079b4                  _flash_read_high
+                  0x0079cc                  _flash_read_chunk
+                  0x007a26                  _flash_erase_page
+                  0x007a60                  _flash_flash_instr
+                  0x007aa0                  _flash_prepare_write
+                  0x007ad4                  ___fixup_errata
+                  0x007b04                  _flash_write_instruction
+                  0x007b50                  _flash_write_buffer
+                  0x007bcc                  _flash_complete_write
+ .text            0x007be0        0x26e build/default/production/_ext/2027221979/ds2777.o
+                  0x007be0                  _ds2777_read_8
+                  0x007c36                  _ds2777_read_16
+                  0x007c54                  _ds2777_write_8
+                  0x007c6e                  _ds2777_write_16
+                  0x007c8c                  _ds2777_read_romid
+                  0x007cce                  _ds2777_read_current
+                  0x007d46                  _ds2777_read_voltage
+                  0x007d72                  _ds2777_read_global_voltage
+                  0x007d96                  _ds2777_read_temperature
+                  0x007da4                  _ds2777_read_acc
+                  0x007db0                  _ds2777_set_acc
+                  0x007dc0                  _ds2777_init_battery
+                  0x007e20                  _ds2777_set_pack_status
+                  0x007e34                  _ds2777_init
+ .text            0x007e4e        0x24a build/default/production/_ext/1193873232/master.o
+                  0x007e4e                  _i2c_init_master
+                  0x007ef0                  _i2c_master_start_operations
+                  0x007f2e                  _i2c_master_is_busy
+                  0x007f52                  _i2c_master_reset
+                  0x007f70                  __MI2C1Interrupt
+                  0x008004                  __MI2C2Interrupt
+ .text            0x008098        0x244 build/default/production/_ext/1193873232/master_protocol.o
+                  0x008098                  build/default/production/_ext/1193873232/master_protocol.o:_i2c_master_transfert_op
+                  0x0081f8                  _i2c_master_transfert_async
+                  0x008252                  _i2c_master_transfert_block
+                  0x008272                  _i2c_read
+                  0x008284                  _i2c_write
+ .text            0x0082dc        0x218 build/default/production/_ext/145293405/vm-buffer.o
+                  0x008336                  _AsebaSendMessage
+                  0x008362                  _AsebaSendVariables
+                  0x008396                  _AsebaSendDescription
+                  0x008496                  _AsebaProcessIncomingEvents
+ .text            0x0084f4        0x1a0 build/default/production/_ext/1644635769/gpio.o
+                  0x0084f4                  _gpio_set_opendrain
+                  0x00853c                  _gpio_set_dir
+                  0x00856e                  _gpio_write
+                  0x0085a2                  _gpio_read
+                  0x0085be                  _gpio_write_word
+                  0x0085c6                  _gpio_read_word
+                  0x0085ce                  _gpio_set_dir_word
+                  0x0085f6                  _gpio_set_opendrain_word
+                  0x008614                  _gpio_write_byte
+                  0x008626                  _gpio_read_byte
+                  0x00863a                  _gpio_set_dir_byte
+                  0x00866a                  _gpio_set_opendrain_byte
+ .text            0x008694        0x156 build/default/production/_ext/2027221979/lis331.o
+                  0x008694                  build/default/production/_ext/2027221979/lis331.o:_lis331_i2c_cb
+                  0x0086dc                  build/default/production/_ext/2027221979/lis331.o:_lis331_tmr
+                  0x0086ee                  _lis331_init
+                  0x008740                  _lis331_set_mode
 
-.dinit            0x0087dc        0x154
- .dinit           0x0087dc        0x154 data_init
+.dinit            0x0087ea        0x154
+ .dinit           0x0087ea        0x154 data_init
 
-.text             0x008930        0x1ca
- .text            0x008930        0x148 build/default/production/_ext/559706460/clock.o
-                  0x0089ee                  _clock_init_external_clock_from_n1_m_n2
-                  0x0089f2                  _clock_init_internal_rc_from_n1_m_n2
-                  0x0089fa                  _clock_init_internal_rc_30
-                  0x008a08                  _clock_init_internal_rc_40
-                  0x008a16                  _clock_set_speed
-                  0x008a1e                  _clock_get_cycle_duration
-                  0x008a28                  _clock_get_cycle_frequency
-                  0x008a2e                  _clock_get_target_bogomips
-                  0x008a32                  _clock_disable_idle
-                  0x008a44                  _clock_enable_idle
-                  0x008a56                  _clock_idle
-                  0x008a62                  _clock_delay_us
- .text            0x008a78         0x58 build/default/production/_ext/1193873232/i2c.o
-                  0x008a78                  _i2c_init
- .text            0x008ad0         0x1e build/default/production/_ext/1838315699/can-buffer.o
-                  0x008ad0                  _AsebaSendBuffer
-                  0x008ae6                  _AsebaGetBuffer
- .text            0x008aee          0xc build/default/production/_ext/557677410/error.o
-                  0x008aee                  build/default/production/_ext/557677410/error.o:_error_default_handler
-                  0x008af2                  _error_report
-                  0x008af6                  _error_register_callback
+.text             0x00893e        0x1ca
+ .text            0x00893e        0x148 build/default/production/_ext/559706460/clock.o
+                  0x0089fc                  _clock_init_external_clock_from_n1_m_n2
+                  0x008a00                  _clock_init_internal_rc_from_n1_m_n2
+                  0x008a08                  _clock_init_internal_rc_30
+                  0x008a16                  _clock_init_internal_rc_40
+                  0x008a24                  _clock_set_speed
+                  0x008a2c                  _clock_get_cycle_duration
+                  0x008a36                  _clock_get_cycle_frequency
+                  0x008a3c                  _clock_get_target_bogomips
+                  0x008a40                  _clock_disable_idle
+                  0x008a52                  _clock_enable_idle
+                  0x008a64                  _clock_idle
+                  0x008a70                  _clock_delay_us
+ .text            0x008a86         0x58 build/default/production/_ext/1193873232/i2c.o
+                  0x008a86                  _i2c_init
+ .text            0x008ade         0x1e build/default/production/_ext/1838315699/can-buffer.o
+                  0x008ade                  _AsebaSendBuffer
+                  0x008af4                  _AsebaGetBuffer
+ .text            0x008afc          0xc build/default/production/_ext/557677410/error.o
+                  0x008afc                  build/default/production/_ext/557677410/error.o:_error_default_handler
+                  0x008b00                  _error_report
+                  0x008b04                  _error_register_callback
