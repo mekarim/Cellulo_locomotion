@@ -40,10 +40,8 @@ const AsebaVMDescription vmDescription = {
 		{ 3, "acc"},
         { 1, "timer"},
                 
-		{ 1, "rpm_2"},
-        { 1, "rot_count_2"},
-        { 1, "rpm_2_new"},
-        { 1, "rot_count_2_new"},
+		{ 1, "speed2"},
+        { 1, "r_count2"},        
 		{ 0, NULL }	// null terminated
 	}
 };

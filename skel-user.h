@@ -79,12 +79,8 @@ struct _vmVariables {
 	sint16 acc[3];
     sint16 timer;
     
-    sint16 rpm_2;
-    sint16 rot_count_2;
-    
-    sint16 rpm_2_new;
-    sint16 rot_count_2_new;
-
+    sint16 speed2;
+    sint16 r_count2;
 	// free space
 	sint16 freeSpace[VM_VARIABLES_FREE_SPACE];
 };
