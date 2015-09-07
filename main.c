@@ -436,9 +436,6 @@ void rpm_cmp(void){
         rpm_2  = 1000000/vmVariables.timer;
         rpm_2  = rpm_2/time_2;
         rpm_2  = 60 * rpm_2;
-        rpm_2  = rpm_2;
-        
-        //IIR_Filter();
         time_2 = 0;
     }    
 }
@@ -448,11 +445,11 @@ void get_rot_speed(hall_dig_enc_data *d){
     
     unsigned int temp;
     if (cond){
-        ++d->r_count;        
-        temp = 13334/d->time;
-        d->speed = 60 * temp;        
-         
-        d->time = 0; temp = 0;
+        ++d->r_count;
+        temp = 1000000/vmVariables.timer;
+        temp = temp/d->time;
+        d->speed = 60 * temp;         
+        d->time = 0;
     }    
 }
 
@@ -485,15 +482,14 @@ void timer_cb(int __attribute((unused)) timer_id) {
         if (count_2 >= 32764) count_2 = 0;
         
         if (hall2_delta != 0){
-			count_2 = count_2 + 1;
-			time_2  = time_2 + 1;
+			count_2++;
+			time_2++;
             rpm_cmp();
 		}
-        else time_2 = time_2 + 1;
+        else time_2++;
     }
 
-    if (HALL_DIG_2_EN_DATA.state == 1){
-        HALL_DIG_2_EN_DATA.pos            = 0;
+    if (HALL_DIG_2_EN_DATA.state == 0){        
         HALL_DIG_2_EN_DATA.speed          = 0;
         HALL_DIG_2_EN_DATA.time           = 0;
         HALL_DIG_2_EN_DATA.count          = 0;    
@@ -502,7 +498,7 @@ void timer_cb(int __attribute((unused)) timer_id) {
         
         if (HALL_DIG_2_EN_DATA.delta != 0) HALL_DIG_2_EN_DATA.state = 1;
     }
-    else if (HALL_DIG_2_EN_DATA.delta == 1) {
+    else if (HALL_DIG_2_EN_DATA.state == 1) {
     if (HALL_DIG_2_EN_DATA.time > 26668)   HALL_DIG_2_EN_DATA.state = 0; // check 2 seconds
     if (HALL_DIG_2_EN_DATA.count >= 32764) HALL_DIG_2_EN_DATA.count = 0; // overflow check
     
@@ -517,8 +513,7 @@ void timer_cb(int __attribute((unused)) timer_id) {
     
     // Update variables
     hall_pv_2 = vmVariables.hall_d[2];
-    HALL_DIG_2_EN_DATA.sen_t1 = HALL_DIG_2_EN_DATA.sen_t2;
-    //IIR_mov_avg(&HALL_DIG_2_EN_DATA, 7); // low pass filter with 256 sample size 
+    HALL_DIG_2_EN_DATA.sen_t1 = HALL_DIG_2_EN_DATA.sen_t2;    
     
     vmVariables.rpm_2 = rpm_2;
     vmVariables.rot_count_2 = rot_count_2;
