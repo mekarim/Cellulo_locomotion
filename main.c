@@ -418,17 +418,21 @@ void IIR_mov_avg(hall_dig_enc_data *d, int samSize)
 /* Measure the speed from the hall sensor pulses
  * 1000000 micro second = 1 second
  * 13334 = 1000000 / 75 micro second
+ * speed in radian per second 
  */
 void get_rot_speed(hall_dig_enc_data *d){
     bool cond = (d->count!=0 && ((d->count%2)==0));
     
-    unsigned int temp;
+    long temp = 0;
     if (cond){
         ++d->r_count;
         temp = 1000000/vmVariables.timer;
         temp = temp/d->time;
-        d->speed = 60 * temp;
+        temp = 60 * temp;
+        temp = __builtin_mulss(temp,1047);
+        d->speed = __builtin_divsd(temp,10000);
         IIR_mov_avg(&d, 9);
+        
         d->time = 0;
     }    
 }
@@ -754,20 +758,13 @@ int main(void) {
 	gpio_write(LED2, 0);
 	gpio_write(LED3, 0);
 	
-	adc2_init_simple(adc_cb, PRIO_IR, 0b11111100000000,31);
-	
+	adc2_init_simple(adc_cb, PRIO_IR, 0b11111100000000,31);	
 	adc1_init_scan_dma(0b1111, ADC_START_CONVERSION_FROM_INTERNAL_COUNTER, 2, 
 					DMA_ADC1, motor_raw, 0, 16, ADC_DMA_CONVERSION_ORDER, NULL);
 	
-	timer_init(m0_PID_TIMER, 10, 3);
-	timer_enable_interrupt(m0_PID_TIMER, m0_timer_cb, PRIO_PID);
-	
-	timer_init(m1_PID_TIMER, 10, 3);
-	timer_enable_interrupt(m1_PID_TIMER, m1_timer_cb, PRIO_PID);
-	
-	timer_init(m2_PID_TIMER, 10, 3);
-	timer_enable_interrupt(m2_PID_TIMER, m2_timer_cb, PRIO_PID);
-	
+	timer_init(m0_PID_TIMER, 10, 3);	
+	timer_init(m1_PID_TIMER, 10, 3);	
+	timer_init(m2_PID_TIMER, 10, 3);	
 	pwm_init(PWM_PRESCALER_1, 700, PWM_CONTINUOUS_UP_DOWN);
 	
 	i2c_init(I2C_1);
@@ -779,22 +776,26 @@ int main(void) {
 	MOTOR_INIT(m1)
 	MOTOR_INIT(m2)
 	
-	timer_init(IR_PULSE, 300, 6); // 300 uS
-	timer_enable_interrupt(IR_PULSE, timer_pulse_cb, PRIO_IR);
-	
+	timer_init(IR_PULSE, 300, 6); // 300 uS	
     timer_init(IR_PERIOD, 100,3); // Don't care about the timeout
-	timer_enable_interrupt(IR_PERIOD, timer_period_cb, PRIO_IR);
-	
     /* 
      * 75 microsecond (meaning every 7.2 degree to rotation)
      * Approximate pulse every two degree of rotation
-     */    
-    hall_dig_enc_init_16(&HALL_DIG_2_EN_DATA);  
-    timer_init(TIME_TIMER, 75, 6);
+     */
+	timer_init(TIME_TIMER, 75, 6);
+	hall_dig_enc_init_16(&HALL_DIG_2_EN_DATA);  
+    
+    	init_aseba_and_can();
+    
+    /* Interrupts enable */
+    timer_enable_interrupt(m0_PID_TIMER, m0_timer_cb, PRIO_PID);
+	timer_enable_interrupt(m1_PID_TIMER, m1_timer_cb, PRIO_PID);
+    timer_enable_interrupt(m2_PID_TIMER, m2_timer_cb, PRIO_PID);
+    
+    timer_enable_interrupt(IR_PULSE, timer_pulse_cb, PRIO_IR);
+    timer_enable_interrupt(IR_PERIOD, timer_period_cb, PRIO_IR);
     timer_enable_interrupt(TIME_TIMER, timer_cb, PRIO_ENCODER);
     
-	init_aseba_and_can();
-    	
 	if(ds2777_init(I2C_1, 0x59)) {
 		battery_present = 1;
 		ds2777_read_romid((int *) vmVariables.battery_id);

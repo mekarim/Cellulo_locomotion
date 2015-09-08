@@ -28,7 +28,7 @@ m2.pid.current_max 	= 60
 m2.pid._period 		= -1
 
 
-timer = 75
+timer = 50
 onevent timer0
 	emit rpm[speed2]
 	
@@ -58,7 +58,7 @@ onevent motor_847
 	m2.pwm = 847
 	
 onevent motor_947
-	m2.pwm = 947</node>
+	m2.pwm = 860</node>
 
 
 </network>
